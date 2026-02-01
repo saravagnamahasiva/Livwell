@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+
+{% block head_extra %}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <style>
+    #map { height: 70vh; width: 100%; }
+    #streetview_container { height: 300px; }
+    #search-bar { width: 100%; padding: 10px; margin-bottom: 10px; }
+    #summary-content, #ml-summary { max-height: 300px; overflow-y: auto; }
+    #facilities-list { max-height: 300px; overflow-y: auto; }
+  </style>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+  <div class="col-md-8">
+    <input id="search-bar" class="form-control" type="text" placeholder="Search for a location" />
+    <div id="map"></div>
+    <div id="streetview_container" class="mt-2"></div>
+  </div>
+
+  <div class="col-md-4">
+
+    <!-- Live Livability Summary -->
+    <div class="card mb-3">
+      <h5 class="card-header"><i class="bi bi-house-door"></i> Livability Summary</h5>
+      <ul id="summary-content" class="list-group list-group-flush livability-summary">
+        <li class="list-group-item">Click on map or search a location.</li>
+      </ul>
+    </div>
+
+    <!-- ML Prediction Summary -->
+    <div class="card mb-3">
+      <h5 class="card-header"><i class="bi bi-cpu"></i> ML Prediction Summary</h5>
+      <ul id="ml-summary" class="list-group list-group-flush">
+        <li class="list-group-item">Search a city to see ML predictions.</li>
+      </ul>
+    </div>
+
+    <!-- Nearby Facilities -->
+    <div class="card mb-3">
+      <h5 class="card-header"><i class="bi bi-geo-alt"></i> Nearby Facilities</h5>
+      <ul id="facilities-list" class="list-group list-group-flush">
+        <li class="list-group-item">No data yet.</li>
+      </ul>
+    </div>
+
+    <!-- Future Predictions Placeholder -->
+    <div class="card mt-3">
+      <h5 class="card-header"><i class="bi bi-bar-chart"></i> Future Predictions (Coming Soon)</h5>
+      <div class="card-body">
+        <p>Simulate policy changes and future livability scores here.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  window.APP_CONFIG = {
+    GOOGLE_MAPS_API_KEY: "{{ google_maps_api_key }}"
+  };
+</script>
+<script src="{{ url_for('static', filename='js/config.js') }}"></script>
+<script src="{{ url_for('static', filename='js/map.js') }}"></script>
+<script src="{{ url_for('static', filename='js/streetview.js') }}"></script>
+
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key={{ google_maps_api_key }}&libraries=places&callback=initMap">
+</script>
+{% endblock %}

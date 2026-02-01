@@ -1,0 +1,187 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  background: rgb(195, 215, 171);
+  color: #79ae8c;
+  min-height: 100vh;
+}
+
+nav.navbar {
+  background: lightblue;
+  border-bottom: 1px solid #dbdbdb;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+}
+
+.navbar-brand {
+  font-family: Arial Black, Impact,sans-serif;
+  font-size: 2.5rem;
+  color: #262626 !important;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+main.container-fluid {
+  margin-top: 2rem;
+}
+
+/* Card Styling */
+.card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  border: 1px solid #dbdbdb;
+  margin-bottom: 2rem;
+  transition: box-shadow 0.2s, border 0.2s;
+}
+.card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+  border: 1.5px solid #b2b2b2;
+}
+.card-header {
+  background: lightblue;
+  border-bottom: 1px solid #dbdbdb;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #262626;
+}
+
+/* Map Styling */
+#map {
+  border: 1.5px solid #dbdbdb;
+  border-radius: 16px;
+  min-height: 60vh;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  margin-bottom: 1.5rem;
+  background: #fff;
+}
+
+#streetview_container {
+  border-radius: 14px;
+  border: 1px solid #dbdbdb;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+  background: #fafafa;
+}
+
+/* Sidebar & Summary */
+#summary {
+  background: blue;
+  border: 1px solid #dbdbdb;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 1.5rem;
+}
+
+#facilities-list {
+  color:black;
+  font-size: 1rem;
+  list-style-type: none;
+  padding-left: 0;
+}
+#facilities-list .list-group-item {
+  color:black;
+  background: #fafafa;
+  margin-bottom: 10px;
+  padding: 14px 18px;
+  border-radius: 10px;
+  border: 1px solid #e6e6e6;
+  transition: background 0.2s;
+}
+#facilities-list .list-group-item:hover {
+  background: lightgrey;
+}
+
+/* Search Bar Styling */
+#search-bar {
+  border-radius: 10px;
+  border: 1px solid #dbdbdb;
+  font-size: 1.1rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  margin-bottom: 1.5rem;
+  padding: 0.85rem 1.2rem;
+  background: #fff;
+  color: #262626;
+  outline: none;
+  transition: border 0.2s;
+}
+#search-bar:focus {
+  border: 1.5px solid #3897f0;
+}
+
+/* Buttons */
+.btn-primary, .btn-primary:focus {
+  background: linear-gradient(90deg, #3897f0 0%, #6a11cb 100%);
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #fff;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(56,151,240,0.08);
+}
+.btn-primary:hover {
+  background: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%);
+}
+
+/* Typography */
+h5, .card-header {
+  letter-spacing: 0.5px;
+}
+
+/* Badge Styling */
+.badge {
+  padding: 6px 12px;
+  border-radius: 14px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  background: #fafafa;
+  color: #262626;
+  border: 1px solid #dbdbdb;
+}
+.bg-success {
+  background-color: #51cb7c !important;
+  color: #fff !important;
+  border: none;
+}
+.bg-info {
+  background-color: #3897f0 !important;
+  color: #fff !important;
+  border: none;
+}
+.text-danger {
+  color: #ed4956 !important;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 991px) {
+  #map { min-height: 40vh; }
+  #streetview_container { height: 200px; }
+}
+@media (max-width: 767px) {
+  main.container-fluid { margin-top: 1rem; }
+  #map { min-height: 30vh; }
+  #summary { padding: 1rem; }
+}
+
+.livability-summary {
+  background-color: #e7f3ff; /* Light blue background, customize as needed */
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.team-name {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #262626;
+}
+
+small {
+  font-size: 0.9rem;
+  color: #555;
+}
+
