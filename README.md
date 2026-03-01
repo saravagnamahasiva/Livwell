@@ -3,6 +3,7 @@
 LivWell is an AI-powered web application that predicts whether a location is suitable for living using environmental data, nearby facilities, machine learning, and recommendations for better nearby areas.
 
 It is designed for **citizens**, **urban planners**, and **hackathon-level smart city decision systems**.
+here is the link to access and view :https://livwell-tegv.onrender.com/
 
 ---
 
