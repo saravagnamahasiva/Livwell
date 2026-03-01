@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LivWell</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  {% block head_extra %}{% endblock %}
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+
+      <!-- Left Logo -->
+      <div class="d-flex align-items-center gap-2">
+        <img src="{{ url_for('static', filename='assets/livwelllogo.png') }}"
+     class="nav-logo">
+      </div>
+
+      <!-- Center Brand -->
+      <div class="text-center">
+        <div class="navbar-brand fw-bold fs-2 mb-0">LivWell</div>
+        <div style="font-size: 0.9rem; color: rgba(0,0,0,0.6);">
+          Live Smart, Live Healthy
+        </div>
+      </div>
+
+      <!-- Right Team -->
+      <div class="fw-semibold">
+        Team Viveka
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="container-fluid">
+    {% block content %}{% endblock %}
+  </main>
+
+  <!-- ✅ FIRST load YOUR JS (defines initMap) -->
+  <script src="{{ url_for('static', filename='js/map.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/streetview.js') }}"></script>
+
+  <!-- ✅ THEN load Google Maps (calls initMap safely) -->
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key={{ google_maps_api_key }}&libraries=places&callback=initMap">
+  </script>
+
+</body>
+</html>

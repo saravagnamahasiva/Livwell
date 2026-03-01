@@ -1,0 +1,220 @@
+:root{
+  --radius: 20px;
+  --shadow: 0 15px 40px rgba(0,0,0,0.06);
+  --glass: rgba(255,255,255,0.75);
+  --text: #1f2937;
+  --muted: rgba(31,41,55,0.65);
+  --primary: #2f80ed;
+  --success: #25c26e;
+}
+
+/* Background */
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto;
+  min-height: 100vh;
+  margin: 0;
+
+  background:
+    radial-gradient(circle at 10% 20%, rgba(46, 204, 113, 0.15), transparent 30%),
+    radial-gradient(circle at 90% 80%, rgba(52, 152, 219, 0.18), transparent 30%),
+    linear-gradient(135deg, #eef5ec, #e8f1f5);
+
+  color: var(--text);
+}
+
+/* Sticky Navbar */
+nav.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+
+  /* Apple-like frosted glass */
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  /* transparent base */
+  background: rgba(255, 255, 255, 0.55);
+
+  border-bottom: 1px solid rgba(255,255,255,0.65);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+
+  padding: 14px 30px;
+
+  /* needed for gradient layer */
+  overflow: hidden;
+}
+
+/* Soft animated aurora layer */
+nav.navbar::before {
+  content: "";
+  position: absolute;
+  inset: -40px;
+  z-index: -1;
+
+  /* Reversed color flow */
+  background: radial-gradient(circle at 15% 30%, rgba(241, 196, 15, 0.22), transparent 45%),
+              radial-gradient(circle at 55% 10%, rgba(155, 89, 182, 0.25), transparent 42%),
+              radial-gradient(circle at 85% 50%, rgba(52, 152, 219, 0.25), transparent 45%),
+              radial-gradient(circle at 35% 90%, rgba(46, 204, 113, 0.28), transparent 45%);
+
+  filter: blur(22px);
+  opacity: 0.95;
+
+  animation: navAurora 10s ease-in-out infinite alternate;
+}
+
+/* Subtle movement */
+@keyframes navAurora {
+  0%   { transform: translate3d(-20px, -10px, 0) scale(1.05); }
+  50%  { transform: translate3d(15px, 10px, 0) scale(1.10); }
+  100% { transform: translate3d(-10px, 15px, 0) scale(1.06); }
+}
+
+nav.navbar * {
+  position: relative;
+  z-index: 2;
+}
+
+nav.navbar {
+  border-bottom: 1px solid rgba(255,255,255,0.9);
+}
+
+/* Navbar Logo */
+.nav-logo {
+  width: 90px;
+  height: 90px;
+  border-radius: 6px;
+  opacity: 0.9;
+}
+
+/* Main spacing */
+main.container-fluid {
+  padding: 28px 40px;
+}
+
+/* Cards */
+.card {
+  background: var(--glass);
+  border-radius: var(--radius);
+  border: 1px solid rgba(255,255,255,0.9);
+  box-shadow: var(--shadow);
+  margin-bottom: 22px;
+  backdrop-filter: blur(18px);
+}
+
+.card-header {
+  font-weight: 700;
+  font-size: 1.05rem;
+  padding: 16px 18px;
+  background: transparent;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+/* Search */
+#search-bar {
+  width: 100%;
+  padding: 15px 18px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.85);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+  font-size: 1rem;
+}
+
+#search-bar:focus {
+  outline: none;
+  border: 1px solid rgba(47,128,237,0.6);
+  box-shadow: 0 0 0 4px rgba(47,128,237,0.15);
+}
+
+/* Map */
+#map {
+  height: calc(100vh - 210px); /* fills screen under navbar */
+  min-height: 520px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+/* ✅ Sticky map card */
+.sticky-map{
+  position: sticky;
+  top: 100px; /* below navbar */
+}
+
+/* ✅ Right side scroll container */
+.right-scroll{
+  height: calc(100vh - 140px); /* adjust based on navbar */
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+/* Lists */
+.list-group-item {
+  background: rgba(255,255,255,0.75);
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  padding: 14px 16px;
+}
+
+.list-group-item:last-child { border-bottom: none; }
+
+.list-group-item.active {
+  background: rgba(255,255,255,0.9) !important;
+  font-weight: 700;
+  color: var(--text) !important;
+}
+
+.list-group-item-info {
+  background: rgba(47,128,237,0.15) !important;
+  border-left: 4px solid rgba(47,128,237,0.6);
+  font-weight: 700;
+}
+
+/* Suggestions */
+.suggestion-item {
+  background: rgba(255,255,255,0.85);
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 14px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+  transition: all 0.25s ease;
+}
+
+.suggestion-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 22px rgba(0,0,0,0.08);
+}
+
+/* Badges */
+.badge {
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.bg-success { background-color: var(--success) !important; }
+.bg-info { background-color: var(--primary) !important; }
+
+.small-muted { color: var(--muted); }
+
+/* Google Places dropdown fix */
+.pac-container {
+  z-index: 99999 !important;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* Responsive (mobile) */
+@media (max-width: 991px){
+  .sticky-map{ position: static; }
+  #map { height: 420px; min-height: 420px; }
+  .right-scroll{ height: auto; overflow: visible; padding-right: 0; }
+}

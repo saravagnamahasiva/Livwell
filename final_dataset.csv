@@ -1,0 +1,615 @@
+Area ID,State,City,AQI (%),WQI (%),Water Quantity (%),Soil Type,Population Density (%),Industry Distance (km),Pollution (%),Cost of Living,Hospitals Nearby,Schools Nearby,Stores Nearby,Livability Label
+1,Maharashtra,Mumbai,85.0,45.0,40.0,Alluvial,95.0,5.0,88.0,21000,45,120,180,Not Suitable
+2,Maharashtra,Pune,65.0,75.0,70.0,Black,85.0,15.0,60.0,18000,38,90,150,Suitable
+3,Karnataka,Bengaluru,68.0,65.0,65.0,Red,90.0,8.0,82.0,19000,42,110,170,Not Suitable
+4,Tamil Nadu,Chennai,82.0,70.0,60.0,Alluvial,88.0,10.0,85.0,17000,35,95,160,Suitable
+5,Delhi,New Delhi,52.0,50.0,45.0,Alluvial,98.0,2.0,95.0,52000,50,130,200,Not Suitable
+6,Gujarat,Ahmedabad,60.0,60.0,55.0,Alluvial,87.0,6.0,83.0,16000,32,85,155,Not Suitable
+7,Uttar Pradesh,Lucknow,65.0,65.0,60.0,Alluvial,82.0,12.0,78.0,14000,28,75,140,Not Suitable
+8,Rajasthan,Jaipur,70.0,55.0,50.0,Desert,80.0,20.0,72.0,13500,30,80,130,Suitable
+9,Telangana,Hyderabad,78.0,72.0,68.0,Red,84.0,10.0,70.0,37500,40,105,165,Suitable
+10,West Bengal,Kolkata,69.0,68.0,62.0,Alluvial,91.0,8.0,81.0,15500,36,88,158,Not Suitable
+11,Andhra Pradesh,Visakhapatnam,82.0,85.0,80.0,Alluvial,75.0,18.0,45.0,24500,35,92,145,Suitable
+12,Andhra Pradesh,Vijayawada,75.0,78.0,75.0,Black,78.0,15.0,58.0,22500,28,80,135,Suitable
+13,Andhra Pradesh,Guntur,85.0,82.0,78.0,Black,70.0,20.0,38.0,21000,25,70,120,Suitable
+14,Andhra Pradesh,Kurmanapalem,75.0,65.0,60.0,Red,82.0,5.0,68.0,20000,18,45,110,Suitable
+15,Andhra Pradesh,Duvvada,72.0,60.0,58.0,Red,85.0,3.0,75.0,15800,15,40,105,Not Suitable
+16,Andhra Pradesh,Gajuwaka,87.0,50.0,48.0,Red,88.0,4.0,82.0,26500,12,35,95,Suitable
+17,Andhra Pradesh,Pendurthi,80.0,80.0,82.0,Alluvial,65.0,22.0,42.0,19800,30,85,150,Suitable
+18,Telangana,Warangal,45.0,80.0,75.0,Red,72.0,16.0,48.0,12000,26,75,130,Suitable
+19,Telangana,Khammam,50.0,75.0,70.0,Black,68.0,18.0,52.0,11500,22,68,125,Suitable
+20,Telangana,Patancheru,88.0,40.0,35.0,Red,82.0,2.0,90.0,14800,10,30,85,Not Suitable
+21,Telangana,Boduppal,38.0,82.0,84.0,Red,60.0,25.0,40.0,13200,32,90,155,Suitable
+22,Telangana,Gachibowli,62.0,78.0,76.0,Red,79.0,12.0,55.0,29500,35,95,168,Suitable
+23,Telangana,Secunderabad,60.0,70.0,65.0,Red,83.0,8.0,65.0,37000,33,88,160,Not Suitable
+24,Telangana,Miyapur,48.0,75.0,72.0,Red,76.0,14.0,50.0,18200,30,82,155,Suitable
+25,Telangana,Uppal,65.0,72.0,68.0,Red,80.0,10.0,58.0,16500,28,78,150,Suitable
+26,Telangana,LB Nagar,58.0,68.0,65.0,Red,82.0,9.0,62.0,36000,25,75,145,Not Suitable
+27,Telangana,Kukatpally,62.0,65.0,62.0,Red,85.0,7.0,68.0,37200,22,70,140,Not Suitable
+28,Telangana,Alwal,50.0,75.0,70.0,Red,75.0,15.0,52.0,15500,26,80,148,Suitable
+29,Telangana,Malkajgiri,65.0,60.0,58.0,Red,84.0,6.0,70.0,16200,20,65,135,Not Suitable
+30,Telangana,Quthbullapur,70.0,55.0,52.0,Red,86.0,5.0,75.0,15800,18,60,130,Not Suitable
+31,Telangana,Bachupally,68.0,58.0,55.0,Red,83.0,4.0,72.0,16800,15,55,125,Not Suitable
+32,Telangana,Jeedimetla,82.0,45.0,40.0,Red,88.0,3.0,85.0,15200,12,45,115,Not Suitable
+33,Telangana,Balangar,75.0,50.0,45.0,Red,87.0,3.0,78.0,15700,14,48,120,Not Suitable
+34,Telangana,Sanathnagar,72.0,52.0,48.0,Red,85.0,4.0,76.0,16300,16,52,128,Not Suitable
+35,Punjab,Ludhiana,65.0,60.0,55.0,Alluvial,82.0,10.0,68.0,14000,30,85,150,Not Suitable
+36,Haryana,Gurugram,78.0,65.0,60.0,Alluvial,90.0,8.0,82.0,20500,38,100,175,Not Suitable
+37,Haryana,Faridabad,75.0,62.0,58.0,Alluvial,88.0,7.0,78.0,18500,35,92,165,Not Suitable
+38,Uttar Pradesh,Noida,80.0,60.0,55.0,Alluvial,92.0,6.0,84.0,19500,40,110,180,Not Suitable
+39,Uttar Pradesh,Ghaziabad,82.0,58.0,53.0,Alluvial,93.0,5.0,86.0,18000,36,105,170,Not Suitable
+40,Uttar Pradesh,Kanpur,85.0,50.0,45.0,Alluvial,86.0,8.0,88.0,14500,28,75,140,Not Suitable
+41,Bihar,Patna,80.0,55.0,50.0,Alluvial,89.0,9.0,83.0,12500,25,70,130,Not Suitable
+42,Madhya Pradesh,Indore,58.0,75.0,72.0,Black,78.0,15.0,60.0,13500,32,88,155,Suitable
+43,Madhya Pradesh,Bhopal,62.0,72.0,70.0,Black,80.0,12.0,65.0,13000,30,85,150,Suitable
+44,Gujarat,Surat,72.0,68.0,65.0,Alluvial,85.0,8.0,75.0,15000,33,90,160,Not Suitable
+45,Gujarat,Vadodara,65.0,70.0,68.0,Black,80.0,12.0,68.0,14000,30,82,150,Suitable
+46,Kerala,Kochi,45.0,88.0,85.0,Alluvial,75.0,20.0,48.0,14500,38,95,160,Suitable
+47,Kerala,Thiruvananthapuram,90.0,85.0,82.0,Laterite,72.0,22.0,42.0,20800,35,90,155,Suitable
+48,Tamil Nadu,Coimbatore,48.0,82.0,80.0,Red,70.0,18.0,50.0,12500,32,85,145,Suitable
+49,Tamil Nadu,Madurai,52.0,78.0,75.0,Red,75.0,15.0,55.0,11800,28,80,140,Suitable
+50,Odisha,Bhubaneswar,50.0,80.0,78.0,Alluvial,73.0,16.0,52.0,12000,30,85,148,Suitable
+51,Jharkhand,Ranchi,55.0,75.0,72.0,Red,70.0,18.0,58.0,11500,26,78,142,Suitable
+52,Jharkhand,Jamshedpur,60.0,72.0,70.0,Red,78.0,10.0,65.0,12800,28,82,150,Not Suitable
+53,Assam,Guwahati,65.0,70.0,65.0,Alluvial,76.0,14.0,68.0,13200,25,75,138,Not Suitable
+54,Punjab,Amritsar,58.0,72.0,70.0,Alluvial,75.0,16.0,60.0,12200,28,80,145,Suitable
+55,Rajasthan,Udaipur,45.0,75.0,78.0,Desert,68.0,25.0,48.0,12800,32,85,150,Suitable
+56,Himachal Pradesh,Shimla,70.0,90.0,88.0,Mountain,60.0,30.0,35.0,15000,35,90,155,Suitable
+57,Uttarakhand,Dehradun,85.0,85.0,82.0,Mountain,65.0,25.0,45.0,14200,33,88,152,Suitable
+58,Goa,Panaji,92.0,92.0,90.0,Laterite,62.0,28.0,40.0,15500,38,95,165,Suitable
+59,Chhattisgarh,Raipur,62.0,68.0,65.0,Red,78.0,12.0,65.0,12500,28,80,140,Not Suitable
+60,West Bengal,Siliguri,55.0,75.0,72.0,Alluvial,72.0,18.0,58.0,11500,26,75,135,Suitable
+61,Andhra Pradesh,Tirupati,90.0,88.0,85.0,Red,65.0,22.0,38.0,21000,30,85,140,Suitable
+62,Andhra Pradesh,Nellore,80.0,82.0,80.0,Alluvial,68.0,20.0,42.0,20500,26,78,130,Suitable
+63,Andhra Pradesh,Kakinada,85.0,80.0,78.0,Alluvial,70.0,18.0,48.0,25800,24,75,125,Suitable
+64,Andhra Pradesh,Kurnool,86.0,75.0,72.0,Black,72.0,16.0,52.0,11200,22,70,120,Suitable
+65,Andhra Pradesh,Anantapur,88.0,78.0,75.0,Red,70.0,19.0,50.0,10900,25,72,122,Suitable
+66,Andhra Pradesh,Rajahmundry,85.0,84.0,82.0,Alluvial,68.0,21.0,45.0,21500,28,80,135,Suitable
+67,Andhra Pradesh,Eluru,85.0,80.0,78.0,Black,70.0,17.0,48.0,21000,25,75,128,Suitable
+68,Andhra Pradesh,Ongole,88.0,83.0,80.0,Alluvial,65.0,23.0,40.0,10200,26,78,132,Suitable
+69,Andhra Pradesh,Chittoor,95.0,85.0,83.0,Red,62.0,25.0,38.0,19800,28,82,138,Suitable
+70,Andhra Pradesh,Kadapa,90.0,80.0,78.0,Red,65.0,22.0,42.0,19500,24,75,130,Suitable
+71,Telangana,Nizamabad,92.0,82.0,80.0,Black,65.0,20.0,45.0,10500,26,78,140,Suitable
+72,Telangana,Karimnagar,85.0,78.0,75.0,Red,68.0,18.0,48.0,10800,24,75,135,Suitable
+73,Telangana,Mahabubnagar,86.0,75.0,72.0,Red,70.0,16.0,52.0,11200,22,70,130,Suitable
+74,Telangana,Nalgonda,88.0,76.0,74.0,Black,68.0,19.0,50.0,10900,23,72,132,Suitable
+75,Telangana,Sangareddy,92.0,72.0,70.0,Red,72.0,14.0,55.0,11500,25,75,138,Suitable
+76,Telangana,Siddipet,45.0,78.0,76.0,Black,65.0,21.0,48.0,11000,26,78,142,Suitable
+77,Telangana,Miryalaguda,40.0,80.0,78.0,Red,62.0,23.0,42.0,10500,24,75,135,Suitable
+78,Telangana,Jagtial,38.0,82.0,80.0,Black,60.0,25.0,40.0,10200,25,78,140,Suitable
+79,Telangana,Adilabad,35.0,84.0,82.0,Red,58.0,27.0,38.0,9800,26,80,145,Suitable
+80,Telangana,Kothagudem,55.0,70.0,68.0,Black,75.0,12.0,58.0,12200,20,68,125,Not Suitable
+81,Andhra Pradesh,NAD Kotha Road,60.0,58.0,55.0,Red,84.0,6.0,73.0,26000,16,50,110,Not Suitable
+82,Andhra Pradesh,Maddilapalem,65.0,62.0,60.0,Alluvial,80.0,8.0,68.0,25200,20,60,120,Not Suitable
+83,Andhra Pradesh,Simhachalam,89.0,80.0,82.0,Mountain,60.0,25.0,48.0,24200,32,85,155,Suitable
+84,Andhra Pradesh,Rushikonda,83.0,88.0,85.0,Mountain,55.0,30.0,40.0,25500,35,90,160,Suitable
+85,Andhra Pradesh,Malkapuram,78.0,55.0,52.0,Alluvial,82.0,5.0,75.0,25800,14,42,100,Suitable
+86,Andhra Pradesh,Scindia,50.0,60.0,58.0,Alluvial,79.0,7.0,72.0,25000,18,55,115,Not Suitable
+87,Andhra Pradesh,Lawson's Bay Colony,68.0,82.0,84.0,Alluvial,65.0,22.0,45.0,16500,30,88,160,Suitable
+88,Andhra Pradesh,Seethammadhara,48.0,78.0,80.0,Alluvial,70.0,18.0,50.0,25800,28,82,155,Suitable
+89,Andhra Pradesh,Dwaraka Nagar,60.0,65.0,62.0,Alluvial,78.0,10.0,65.0,34500,22,70,135,Not Suitable
+90,Andhra Pradesh,Akkayyapalem,65.0,60.0,58.0,Alluvial,81.0,8.0,70.0,14800,18,60,125,Not Suitable
+91,Andhra Pradesh,Sagar Nagar,55.0,70.0,68.0,Alluvial,75.0,12.0,58.0,33800,25,75,140,Suitable
+92,Andhra Pradesh,Yendada,40.0,85.0,83.0,Alluvial,62.0,24.0,42.0,35200,32,90,158,Suitable
+93,Andhra Pradesh,Gambhiram,58.0,68.0,65.0,Alluvial,76.0,14.0,62.0,14200,20,65,130,Not Suitable
+94,Andhra Pradesh,Madhurawada,80.0,75.0,72.0,Alluvial,72.0,16.0,52.0,13500,28,80,145,Suitable
+95,Andhra Pradesh,Arilova,69.0,78.0,75.0,Alluvial,68.0,18.0,48.0,12800,30,85,150,Suitable
+96,Andhra Pradesh,Parawada,52.0,62.0,60.0,Red,80.0,4.0,68.0,15500,12,40,105,Not Suitable
+97,Andhra Pradesh,Atchutapuram,75.0,50.0,45.0,Red,85.0,2.0,80.0,14800,10,35,95,Not Suitable
+98,Andhra Pradesh,Nakkapalli,70.0,55.0,50.0,Red,82.0,3.0,75.0,14200,14,45,110,Not Suitable
+99,Andhra Pradesh,Anakapalle,55.0,72.0,70.0,Black,75.0,14.0,58.0,28500,26,78,140,Suitable
+100,Andhra Pradesh,Bheemunipatnam,38.0,85.0,84.0,Alluvial,60.0,26.0,40.0,13500,33,88,152,Suitable
+101,Jammu and Kashmir,Srinagar,32.0,82.0,78.0,Mountain,65.0,22.0,38.0,12500,28,75,140,Suitable
+102,Jammu and Kashmir,Jammu,45.0,75.0,72.0,Alluvial,72.0,15.0,50.0,11500,25,70,135,Suitable
+103,Himachal Pradesh,Dharamshala,28.0,88.0,85.0,Mountain,55.0,28.0,32.0,13800,30,80,145,Suitable
+104,Himachal Pradesh,Kullu,30.0,85.0,82.0,Mountain,58.0,25.0,35.0,12800,26,72,138,Suitable
+105,Punjab,Jalandhar,62.0,65.0,60.0,Alluvial,80.0,10.0,68.0,13200,28,78,145,Not Suitable
+106,Punjab,Bhatinda,68.0,58.0,55.0,Alluvial,78.0,8.0,72.0,12500,22,65,130,Not Suitable
+107,Punjab,Patiala,58.0,70.0,68.0,Alluvial,75.0,12.0,62.0,12800,26,75,140,Suitable
+108,Uttarakhand,Haridwar,52.0,75.0,72.0,Alluvial,70.0,18.0,55.0,13500,30,82,148,Suitable
+109,Uttarakhand,Rishikesh,38.0,86.0,84.0,Mountain,62.0,24.0,42.0,14500,32,85,155,Suitable
+110,Uttarakhand,Haldwani,48.0,78.0,75.0,Alluvial,68.0,16.0,52.0,11800,26,75,135,Suitable
+111,Uttarakhand,Rudrapur,65.0,62.0,58.0,Alluvial,75.0,8.0,70.0,12200,20,65,125,Not Suitable
+112,Uttar Pradesh,Agra,82.0,50.0,45.0,Alluvial,88.0,6.0,85.0,14500,30,80,150,Not Suitable
+113,Uttar Pradesh,Varanasi,85.0,48.0,42.0,Alluvial,92.0,4.0,88.0,13800,28,75,142,Not Suitable
+114,Uttar Pradesh,Meerut,78.0,55.0,50.0,Alluvial,85.0,7.0,82.0,14800,32,85,155,Not Suitable
+115,Uttar Pradesh,Allahabad,80.0,52.0,48.0,Alluvial,84.0,5.0,84.0,13500,26,78,140,Not Suitable
+116,Uttar Pradesh,Bareilly,75.0,58.0,53.0,Alluvial,80.0,9.0,78.0,12800,24,72,135,Not Suitable
+117,Uttar Pradesh,Aligarh,72.0,60.0,55.0,Alluvial,82.0,8.0,76.0,13200,26,75,138,Not Suitable
+118,Uttar Pradesh,Moradabad,77.0,55.0,50.0,Alluvial,83.0,6.0,80.0,12500,22,68,130,Not Suitable
+119,Uttar Pradesh,Saharanpur,70.0,62.0,58.0,Alluvial,79.0,10.0,74.0,13000,25,70,135,Not Suitable
+120,Uttar Pradesh,Gorakhpur,68.0,65.0,60.0,Alluvial,78.0,12.0,72.0,12200,23,68,128,Suitable
+121,Uttar Pradesh,Firozabad,84.0,45.0,40.0,Alluvial,86.0,3.0,87.0,11800,18,55,120,Not Suitable
+122,Uttar Pradesh,Jhansi,62.0,70.0,68.0,Black,72.0,14.0,65.0,11500,25,72,135,Suitable
+123,Rajasthan,Jodhpur,65.0,50.0,45.0,Desert,78.0,10.0,70.0,12500,26,75,140,Not Suitable
+124,Rajasthan,Kota,68.0,55.0,50.0,Desert,80.0,8.0,72.0,12800,28,78,145,Not Suitable
+125,Rajasthan,Bikaner,72.0,48.0,42.0,Desert,75.0,12.0,75.0,12200,22,65,130,Not Suitable
+126,Rajasthan,Ajmer,60.0,62.0,58.0,Desert,72.0,15.0,65.0,11800,25,70,135,Suitable
+127,Rajasthan,Bhilwara,55.0,68.0,65.0,Black,68.0,18.0,58.0,11200,23,68,128,Suitable
+128,Rajasthan,Pushkar,40.0,75.0,78.0,Desert,55.0,25.0,45.0,13500,28,75,145,Suitable
+129,Haryana,Panipat,72.0,58.0,53.0,Alluvial,80.0,7.0,76.0,14500,26,75,140,Not Suitable
+130,Haryana,Ambala,60.0,68.0,65.0,Alluvial,72.0,14.0,65.0,13200,28,80,145,Suitable
+131,Haryana,Yamunanagar,65.0,62.0,58.0,Alluvial,75.0,10.0,70.0,12800,24,72,135,Not Suitable
+132,Haryana,Rohtak,70.0,60.0,55.0,Alluvial,78.0,8.0,74.0,13500,26,75,138,Not Suitable
+133,Haryana,Hisar,68.0,58.0,52.0,Alluvial,76.0,9.0,72.0,12500,22,68,130,Not Suitable
+134,Haryana,Karnal,62.0,65.0,62.0,Alluvial,74.0,12.0,68.0,13800,28,78,142,Suitable
+135,Haryana,Panchkula,55.0,75.0,72.0,Alluvial,70.0,16.0,58.0,15200,32,85,155,Suitable
+136,Delhi,Dwarka,78.0,60.0,55.0,Alluvial,90.0,8.0,82.0,21000,35,90,165,Not Suitable
+137,Delhi,Rohini,80.0,58.0,53.0,Alluvial,92.0,6.0,84.0,20500,32,85,160,Not Suitable
+138,Delhi,Mayur Vihar,75.0,62.0,58.0,Alluvial,88.0,9.0,78.0,19500,30,82,155,Not Suitable
+139,Delhi,Vasant Kunj,70.0,65.0,62.0,Alluvial,85.0,12.0,75.0,22500,38,95,175,Suitable
+140,Delhi,Saket,72.0,63.0,60.0,Alluvial,87.0,10.0,76.0,21800,36,92,170,Not Suitable
+141,Bihar,Gaya,75.0,52.0,48.0,Alluvial,82.0,8.0,80.0,10500,20,60,120,Not Suitable
+142,Bihar,Bhagalpur,70.0,55.0,50.0,Alluvial,80.0,10.0,75.0,9800,22,65,125,Not Suitable
+143,Bihar,Muzaffarpur,72.0,50.0,45.0,Alluvial,83.0,7.0,77.0,9500,18,58,115,Not Suitable
+144,Bihar,Darbhanga,68.0,58.0,53.0,Alluvial,78.0,12.0,72.0,9200,20,62,118,Suitable
+145,Bihar,Patna City,82.0,45.0,40.0,Alluvial,90.0,4.0,85.0,11000,15,50,110,Not Suitable
+146,Jharkhand,Dhanbad,85.0,40.0,35.0,Black,82.0,3.0,88.0,11500,20,60,125,Not Suitable
+147,Jharkhand,Bokaro,80.0,45.0,38.0,Red,80.0,5.0,83.0,10800,22,65,130,Not Suitable
+148,Jharkhand,Hazaribagh,55.0,72.0,70.0,Red,65.0,18.0,58.0,9800,25,70,135,Suitable
+149,West Bengal,Howrah,82.0,50.0,45.0,Alluvial,92.0,5.0,85.0,14500,28,75,140,Not Suitable
+150,West Bengal,Durgapur,75.0,55.0,50.0,Alluvial,85.0,8.0,78.0,12500,26,72,135,Not Suitable
+151,West Bengal,Asansol,78.0,52.0,48.0,Alluvial,87.0,6.0,82.0,11800,24,68,130,Not Suitable
+152,West Bengal,Siliguri More,65.0,60.0,58.0,Alluvial,75.0,12.0,70.0,11200,22,65,125,Not Suitable
+153,West Bengal,Bardhaman,60.0,65.0,62.0,Alluvial,72.0,15.0,65.0,10500,25,70,132,Suitable
+154,West Bengal,Malda,62.0,62.0,60.0,Alluvial,75.0,10.0,68.0,9800,20,62,120,Not Suitable
+155,West Bengal,Kharagpur,58.0,68.0,65.0,Alluvial,70.0,14.0,62.0,10200,23,68,128,Suitable
+156,Odisha,Puri,42.0,82.0,85.0,Alluvial,65.0,22.0,45.0,11500,30,80,145,Suitable
+157,Odisha,Cuttack,58.0,70.0,68.0,Alluvial,75.0,12.0,62.0,10800,26,75,135,Suitable
+158,Odisha,Rourkela,65.0,60.0,55.0,Red,78.0,8.0,70.0,11200,22,65,125,Not Suitable
+159,Odisha,Sambalpur,55.0,72.0,70.0,Red,70.0,16.0,58.0,10500,24,70,130,Suitable
+160,Odisha,Balasore,48.0,75.0,72.0,Alluvial,68.0,18.0,52.0,9800,25,72,132,Suitable
+161,Chhattisgarh,Bhilai,68.0,60.0,55.0,Red,80.0,7.0,72.0,11500,24,68,130,Not Suitable
+162,Chhattisgarh,Raigarh,55.0,70.0,68.0,Red,68.0,16.0,58.0,10200,22,65,125,Suitable
+163,Chhattisgarh,Korba,80.0,45.0,40.0,Black,78.0,4.0,83.0,10800,18,55,115,Not Suitable
+164,Chhattisgarh,Durg,62.0,65.0,62.0,Red,75.0,10.0,65.0,11200,26,72,135,Suitable
+165,Chhattisgarh,Rajnandgaon,50.0,75.0,72.0,Black,65.0,19.0,52.0,9800,23,68,128,Suitable
+166,Madhya Pradesh,Gwalior,72.0,55.0,50.0,Black,80.0,8.0,75.0,12500,26,75,135,Not Suitable
+167,Madhya Pradesh,Jabalpur,65.0,62.0,58.0,Black,78.0,12.0,68.0,11800,28,78,140,Suitable
+168,Madhya Pradesh,Ujjain,58.0,68.0,65.0,Black,72.0,15.0,62.0,11200,25,72,132,Suitable
+169,Madhya Pradesh,Sagar,55.0,72.0,70.0,Black,68.0,17.0,58.0,10500,23,70,128,Suitable
+170,Madhya Pradesh,Dewas,60.0,65.0,62.0,Black,70.0,14.0,65.0,10800,24,68,130,Suitable
+171,Madhya Pradesh,Satna,52.0,70.0,68.0,Red,65.0,18.0,55.0,9800,22,65,125,Suitable
+172,Madhya Pradesh,Ratlam,62.0,62.0,58.0,Black,72.0,11.0,68.0,10200,20,60,120,Not Suitable
+173,Madhya Pradesh,Rewa,50.0,75.0,72.0,Red,68.0,16.0,52.0,9500,25,70,130,Suitable
+174,Gujarat,Rajkot,65.0,65.0,62.0,Black,78.0,10.0,68.0,13500,30,82,150,Suitable
+175,Gujarat,Bhavnagar,62.0,62.0,58.0,Black,75.0,12.0,65.0,12800,26,75,140,Suitable
+176,Gujarat,Jamnagar,58.0,68.0,65.0,Black,72.0,15.0,62.0,12200,28,78,145,Suitable
+177,Gujarat,Gandhinagar,52.0,75.0,72.0,Alluvial,70.0,18.0,55.0,14500,32,85,155,Suitable
+178,Gujarat,Gandhidham,60.0,65.0,60.0,Alluvial,74.0,10.0,65.0,13200,25,70,135,Suitable
+179,Gujarat,Anand,55.0,72.0,70.0,Black,68.0,16.0,58.0,11800,26,75,140,Suitable
+180,Gujarat,Nadiad,58.0,70.0,68.0,Black,70.0,14.0,62.0,12500,27,76,142,Suitable
+181,Maharashtra,Nagpur,70.0,60.0,55.0,Black,82.0,8.0,75.0,15500,35,90,160,Not Suitable
+182,Maharashtra,Nashik,62.0,68.0,65.0,Black,78.0,12.0,65.0,14500,32,85,155,Suitable
+183,Maharashtra,Thane,82.0,55.0,50.0,Alluvial,92.0,5.0,85.0,20000,38,95,170,Not Suitable
+184,Maharashtra,Pimpri-Chinchwad,68.0,70.0,68.0,Black,84.0,10.0,72.0,17500,34,88,162,Suitable
+185,Maharashtra,Kalyan-Dombivli,78.0,58.0,53.0,Alluvial,88.0,6.0,82.0,18500,30,80,155,Not Suitable
+186,Maharashtra,Vasai-Virar,75.0,60.0,55.0,Alluvial,85.0,8.0,78.0,17800,28,78,150,Not Suitable
+187,Maharashtra,Aurangabad,65.0,65.0,62.0,Black,80.0,10.0,68.0,14200,30,82,148,Suitable
+188,Maharashtra,Solapur,62.0,62.0,58.0,Black,75.0,12.0,65.0,13500,26,75,140,Suitable
+189,Maharashtra,Bhiwandi,80.0,50.0,45.0,Alluvial,87.0,4.0,83.0,16500,22,65,135,Not Suitable
+190,Maharashtra,Amravati,58.0,70.0,68.0,Black,72.0,15.0,62.0,12800,28,80,145,Suitable
+191,Maharashtra,Nanded,55.0,72.0,70.0,Black,70.0,16.0,58.0,11800,26,75,138,Suitable
+192,Maharashtra,Kolhapur,50.0,78.0,75.0,Black,68.0,18.0,52.0,12500,30,82,150,Suitable
+193,Maharashtra,Ulhasnagar,77.0,52.0,48.0,Alluvial,84.0,5.0,80.0,17200,24,70,140,Not Suitable
+194,Maharashtra,Sangli,48.0,75.0,72.0,Black,65.0,19.0,50.0,11500,27,78,142,Suitable
+195,Maharashtra,Mira-Bhayandar,79.0,56.0,52.0,Alluvial,89.0,7.0,82.0,19200,31,84,158,Not Suitable
+196,Maharashtra,Jalgaon,60.0,65.0,62.0,Black,73.0,13.0,65.0,12200,25,72,135,Suitable
+197,Maharashtra,Akola,62.0,62.0,58.0,Black,75.0,11.0,68.0,11800,23,68,130,Not Suitable
+198,Maharashtra,Latur,55.0,70.0,68.0,Black,68.0,17.0,58.0,11200,26,75,136,Suitable
+199,Maharashtra,Dhule,58.0,68.0,65.0,Black,70.0,14.0,62.0,11500,24,70,132,Suitable
+200,Maharashtra,Ahmednagar,52.0,72.0,70.0,Black,67.0,16.0,55.0,10800,25,72,130,Suitable
+301,Karnataka,Mysuru,52.0,78.0,75.0,Red,72.0,16.0,55.0,14500,32,85,155,Suitable
+302,Karnataka,Mangaluru,45.0,82.0,80.0,Laterite,68.0,20.0,48.0,13800,35,88,160,Suitable
+303,Karnataka,Hubballi-Dharwad,58.0,70.0,68.0,Black,75.0,12.0,62.0,12500,30,80,145,Suitable
+304,Karnataka,Belagavi,55.0,72.0,70.0,Black,72.0,14.0,58.0,11800,28,78,140,Suitable
+305,Karnataka,Kalaburagi,62.0,65.0,62.0,Red,78.0,10.0,68.0,11200,25,72,135,Suitable
+306,Karnataka,Davanagere,60.0,68.0,65.0,Red,75.0,11.0,65.0,11500,26,75,138,Suitable
+307,Karnataka,Ballari,65.0,60.0,55.0,Red,80.0,8.0,70.0,12200,22,65,130,Not Suitable
+308,Karnataka,Tumakuru,58.0,68.0,65.0,Red,73.0,13.0,62.0,10800,24,70,132,Suitable
+309,Karnataka,Shivamogga,50.0,75.0,72.0,Red,68.0,17.0,52.0,10500,26,75,135,Suitable
+310,Karnataka,Hassan,48.0,78.0,75.0,Red,65.0,19.0,50.0,9800,25,72,130,Suitable
+311,Karnataka,Nanded,55.0,72.0,70.0,Black,70.0,16.0,58.0,11800,26,75,138,Suitable
+312,Kerala,Kozhikode,42.0,85.0,82.0,Laterite,70.0,22.0,45.0,13200,36,88,152,Suitable
+313,Kerala,Kollam,40.0,82.0,80.0,Laterite,68.0,20.0,42.0,12500,33,85,148,Suitable
+314,Kerala,Thrissur,38.0,88.0,85.0,Laterite,65.0,24.0,40.0,13800,35,90,155,Suitable
+315,Kerala,Palakkad,45.0,80.0,78.0,Laterite,72.0,18.0,48.0,11800,30,82,142,Suitable
+316,Kerala,Kannur,42.0,82.0,80.0,Laterite,70.0,20.0,45.0,12800,32,85,150,Suitable
+317,Kerala,Alappuzha,35.0,90.0,88.0,Laterite,62.0,26.0,38.0,13500,34,88,154,Suitable
+318,Kerala,Kottayam,38.0,88.0,85.0,Laterite,65.0,24.0,40.0,14200,36,90,158,Suitable
+319,Kerala,Malappuram,48.0,78.0,75.0,Laterite,75.0,16.0,52.0,12200,28,80,145,Suitable
+320,Kerala,Manjeri,45.0,80.0,78.0,Laterite,72.0,18.0,48.0,11500,26,78,140,Suitable
+401,Tamil Nadu,Salem,55.0,75.0,72.0,Red,72.0,15.0,58.0,11200,28,80,142,Suitable
+402,Tamil Nadu,Tiruchirappalli,52.0,78.0,75.0,Red,70.0,17.0,55.0,10800,30,82,145,Suitable
+403,Tamil Nadu,Tiruppur,60.0,70.0,68.0,Red,78.0,10.0,65.0,11500,26,75,138,Suitable
+404,Tamil Nadu,Erode,58.0,72.0,70.0,Red,75.0,12.0,62.0,11000,27,78,140,Suitable
+405,Tamil Nadu,Vellore,55.0,75.0,72.0,Red,72.0,14.0,58.0,10500,28,80,142,Suitable
+406,Tamil Nadu,Tuticorin,62.0,65.0,62.0,Alluvial,80.0,8.0,68.0,11800,24,70,135,Not Suitable
+407,Tamil Nadu,Dindigul,50.0,78.0,75.0,Red,68.0,18.0,52.0,9800,26,75,138,Suitable
+408,Tamil Nadu,Thanjavur,48.0,80.0,78.0,Alluvial,65.0,20.0,50.0,9500,28,80,140,Suitable
+409,Tamil Nadu,Hosur,65.0,68.0,65.0,Red,82.0,6.0,70.0,13500,25,72,132,Not Suitable
+410,Tamil Nadu,Nagercoil,45.0,82.0,80.0,Laterite,70.0,22.0,48.0,11200,30,82,148,Suitable
+501,Andhra Pradesh,Srikakulam,40.0,80.0,78.0,Alluvial,65.0,22.0,42.0,9800,26,75,135,Suitable
+502,Andhra Pradesh,Vizianagaram,42.0,82.0,80.0,Alluvial,68.0,20.0,45.0,10200,28,78,140,Suitable
+503,Andhra Pradesh,Machilipatnam,45.0,78.0,75.0,Alluvial,70.0,18.0,48.0,10500,25,72,135,Suitable
+504,Andhra Pradesh,Proddatur,55.0,72.0,70.0,Red,75.0,14.0,58.0,11200,26,75,138,Suitable
+505,Andhra Pradesh,Hindupur,58.0,70.0,68.0,Red,78.0,12.0,62.0,11800,24,70,135,Suitable
+506,Andhra Pradesh,Tadipatri,60.0,68.0,65.0,Red,80.0,10.0,65.0,12200,22,65,130,Not Suitable
+507,Andhra Pradesh,Dharmavaram,62.0,65.0,62.0,Red,82.0,8.0,68.0,12500,20,62,125,Not Suitable
+508,Andhra Pradesh,Gudivada,48.0,75.0,72.0,Black,72.0,16.0,52.0,10800,25,72,132,Suitable
+509,Andhra Pradesh,Nandyal,52.0,72.0,70.0,Black,75.0,13.0,55.0,11200,26,75,135,Suitable
+510,Andhra Pradesh,Chilakaluripet,50.0,75.0,72.0,Black,70.0,15.0,52.0,10500,24,70,130,Suitable
+601,Telangana,Sircilla,45.0,78.0,76.0,Black,65.0,21.0,48.0,10800,24,72,135,Suitable
+602,Telangana,Hanamkonda,48.0,80.0,78.0,Red,68.0,19.0,50.0,11200,26,75,140,Suitable
+603,Telangana,Ramagundam,65.0,60.0,55.0,Black,78.0,8.0,70.0,11800,20,65,125,Not Suitable
+604,Telangana,Khammam Rural,42.0,82.0,80.0,Black,60.0,24.0,45.0,10200,28,80,145,Suitable
+605,Telangana,Nirmal,40.0,84.0,82.0,Red,58.0,26.0,42.0,9800,26,78,140,Suitable
+606,Telangana,Mancherial,55.0,70.0,68.0,Black,70.0,16.0,58.0,10500,22,68,130,Suitable
+607,Telangana,Kamareddy,48.0,75.0,72.0,Red,65.0,20.0,50.0,9500,24,70,132,Suitable
+608,Telangana,Wanaparthy,45.0,78.0,75.0,Red,62.0,22.0,48.0,9200,22,65,128,Suitable
+609,Telangana,Gadwal,42.0,80.0,78.0,Black,60.0,24.0,45.0,9000,20,62,125,Suitable
+610,Telangana,Suryapet,50.0,75.0,72.0,Black,68.0,18.0,52.0,10200,25,72,135,Suitable
+701,Assam,Silchar,55.0,72.0,70.0,Alluvial,70.0,18.0,58.0,10500,26,75,135,Suitable
+702,Assam,Dibrugarh,50.0,75.0,72.0,Alluvial,68.0,20.0,52.0,9800,28,78,140,Suitable
+703,Assam,Nagaon,58.0,68.0,65.0,Alluvial,72.0,15.0,62.0,9500,24,70,130,Suitable
+704,Assam,Tinsukia,52.0,72.0,70.0,Alluvial,70.0,17.0,55.0,10200,25,72,132,Suitable
+705,Assam,Jorhat,48.0,78.0,75.0,Alluvial,65.0,22.0,50.0,10800,30,82,145,Suitable
+706,Assam,Bongaigaon,62.0,62.0,58.0,Alluvial,75.0,10.0,68.0,9200,20,62,120,Not Suitable
+707,Assam,Tezpur,45.0,80.0,78.0,Alluvial,62.0,24.0,48.0,11200,28,80,148,Suitable
+708,Assam,Karimganj,42.0,82.0,80.0,Alluvial,60.0,26.0,45.0,10500,26,78,142,Suitable
+709,Assam,Sivasagar,40.0,84.0,82.0,Alluvial,58.0,28.0,42.0,9800,24,75,138,Suitable
+710,Assam,Goalpara,55.0,70.0,68.0,Alluvial,65.0,19.0,58.0,9500,22,68,130,Suitable
+801,Goa,Vasco da Gama,45.0,85.0,82.0,Laterite,70.0,20.0,48.0,14800,32,85,155,Suitable
+802,Goa,Margao,42.0,88.0,85.0,Laterite,68.0,22.0,45.0,14200,34,88,158,Suitable
+803,Goa,Mapusa,40.0,85.0,83.0,Laterite,65.0,24.0,42.0,13500,30,82,150,Suitable
+804,Goa,Ponda,38.0,87.0,85.0,Laterite,62.0,26.0,40.0,12800,28,80,145,Suitable
+805,Goa,Bicholim,35.0,90.0,88.0,Laterite,58.0,28.0,38.0,12200,26,78,140,Suitable
+806,Goa,Valpoi,32.0,92.0,90.0,Laterite,55.0,30.0,35.0,11500,24,75,135,Suitable
+807,Goa,Canacona,38.0,88.0,86.0,Laterite,60.0,25.0,40.0,13200,30,82,152,Suitable
+808,Goa,Curchorem,42.0,85.0,83.0,Laterite,64.0,21.0,45.0,12500,28,80,148,Suitable
+809,Goa,Sanquelim,40.0,87.0,85.0,Laterite,62.0,23.0,42.0,11800,26,78,142,Suitable
+810,Goa,Quepem,35.0,89.0,87.0,Laterite,58.0,27.0,38.0,11200,24,75,138,Suitable
+101,Jammu and Kashmir,Srinagar,32.0,82.0,78.0,Mountain,65.0,22.0,38.0,12500,28,75,140,Suitable
+102,Jammu and Kashmir,Jammu,45.0,75.0,72.0,Alluvial,72.0,15.0,50.0,11500,25,70,135,Suitable
+103,Himachal Pradesh,Dharamshala,28.0,88.0,85.0,Mountain,55.0,28.0,32.0,13800,30,80,145,Suitable
+104,Himachal Pradesh,Kullu,30.0,85.0,82.0,Mountain,58.0,25.0,35.0,12800,26,72,138,Suitable
+105,Punjab,Jalandhar,62.0,65.0,60.0,Alluvial,80.0,10.0,68.0,13200,28,78,145,Not Suitable
+106,Punjab,Bhatinda,68.0,58.0,55.0,Alluvial,78.0,8.0,72.0,12500,22,65,130,Not Suitable
+107,Punjab,Patiala,58.0,70.0,68.0,Alluvial,75.0,12.0,62.0,12800,26,75,140,Suitable
+108,Uttarakhand,Haridwar,52.0,75.0,72.0,Alluvial,70.0,18.0,55.0,13500,30,82,148,Suitable
+109,Uttarakhand,Rishikesh,38.0,86.0,84.0,Mountain,62.0,24.0,42.0,14500,32,85,155,Suitable
+110,Uttarakhand,Haldwani,48.0,78.0,75.0,Alluvial,68.0,16.0,52.0,11800,26,75,135,Suitable
+111,Uttarakhand,Rudrapur,65.0,62.0,58.0,Alluvial,75.0,8.0,70.0,12200,20,65,125,Not Suitable
+112,Uttar Pradesh,Agra,82.0,50.0,45.0,Alluvial,88.0,6.0,85.0,14500,30,80,150,Not Suitable
+113,Uttar Pradesh,Varanasi,85.0,48.0,42.0,Alluvial,92.0,4.0,88.0,13800,28,75,142,Not Suitable
+114,Uttar Pradesh,Meerut,78.0,55.0,50.0,Alluvial,85.0,7.0,82.0,14800,32,85,155,Not Suitable
+115,Uttar Pradesh,Allahabad,80.0,52.0,48.0,Alluvial,84.0,5.0,84.0,13500,26,78,140,Not Suitable
+116,Uttar Pradesh,Bareilly,75.0,58.0,53.0,Alluvial,80.0,9.0,78.0,12800,24,72,135,Not Suitable
+117,Uttar Pradesh,Aligarh,72.0,60.0,55.0,Alluvial,82.0,8.0,76.0,13200,26,75,138,Not Suitable
+118,Uttar Pradesh,Moradabad,77.0,55.0,50.0,Alluvial,83.0,6.0,80.0,12500,22,68,130,Not Suitable
+119,Uttar Pradesh,Saharanpur,70.0,62.0,58.0,Alluvial,79.0,10.0,74.0,13000,25,70,135,Not Suitable
+120,Uttar Pradesh,Gorakhpur,68.0,65.0,60.0,Alluvial,78.0,12.0,72.0,12200,23,68,128,Suitable
+121,Uttar Pradesh,Firozabad,84.0,45.0,40.0,Alluvial,86.0,3.0,87.0,11800,18,55,120,Not Suitable
+122,Uttar Pradesh,Jhansi,62.0,70.0,68.0,Black,72.0,14.0,65.0,11500,25,72,135,Suitable
+123,Rajasthan,Jodhpur,65.0,50.0,45.0,Desert,78.0,10.0,70.0,12500,26,75,140,Not Suitable
+124,Rajasthan,Kota,68.0,55.0,50.0,Desert,80.0,8.0,72.0,12800,28,78,145,Not Suitable
+125,Rajasthan,Bikaner,72.0,48.0,42.0,Desert,75.0,12.0,75.0,12200,22,65,130,Not Suitable
+126,Rajasthan,Ajmer,60.0,62.0,58.0,Desert,72.0,15.0,65.0,11800,25,70,135,Suitable
+127,Rajasthan,Bhilwara,55.0,68.0,65.0,Black,68.0,18.0,58.0,11200,23,68,128,Suitable
+128,Rajasthan,Pushkar,40.0,75.0,78.0,Desert,55.0,25.0,45.0,13500,28,75,145,Suitable
+129,Haryana,Panipat,72.0,58.0,53.0,Alluvial,80.0,7.0,76.0,14500,26,75,140,Not Suitable
+130,Haryana,Ambala,60.0,68.0,65.0,Alluvial,72.0,14.0,65.0,13200,28,80,145,Suitable
+131,Haryana,Yamunanagar,65.0,62.0,58.0,Alluvial,75.0,10.0,70.0,12800,24,72,135,Not Suitable
+132,Haryana,Rohtak,70.0,60.0,55.0,Alluvial,78.0,8.0,74.0,13500,26,75,138,Not Suitable
+133,Haryana,Hisar,68.0,58.0,52.0,Alluvial,76.0,9.0,72.0,12500,22,68,130,Not Suitable
+134,Haryana,Karnal,62.0,65.0,62.0,Alluvial,74.0,12.0,68.0,13800,28,78,142,Suitable
+135,Haryana,Panchkula,55.0,75.0,72.0,Alluvial,70.0,16.0,58.0,15200,32,85,155,Suitable
+136,Delhi,Dwarka,78.0,60.0,55.0,Alluvial,90.0,8.0,82.0,21000,35,90,165,Not Suitable
+137,Delhi,Rohini,80.0,58.0,53.0,Alluvial,92.0,6.0,84.0,20500,32,85,160,Not Suitable
+138,Delhi,Mayur Vihar,75.0,62.0,58.0,Alluvial,88.0,9.0,78.0,19500,30,82,155,Not Suitable
+139,Delhi,Vasant Kunj,70.0,65.0,62.0,Alluvial,85.0,12.0,75.0,22500,38,95,175,Suitable
+140,Delhi,Saket,72.0,63.0,60.0,Alluvial,87.0,10.0,76.0,21800,36,92,170,Not Suitable
+141,Bihar,Gaya,75.0,52.0,48.0,Alluvial,82.0,8.0,80.0,10500,20,60,120,Not Suitable
+142,Bihar,Bhagalpur,70.0,55.0,50.0,Alluvial,80.0,10.0,75.0,9800,22,65,125,Not Suitable
+143,Bihar,Muzaffarpur,72.0,50.0,45.0,Alluvial,83.0,7.0,77.0,9500,18,58,115,Not Suitable
+144,Bihar,Darbhanga,68.0,58.0,53.0,Alluvial,78.0,12.0,72.0,9200,20,62,118,Suitable
+145,Bihar,Patna City,82.0,45.0,40.0,Alluvial,90.0,4.0,85.0,11000,15,50,110,Not Suitable
+146,Jharkhand,Dhanbad,85.0,40.0,35.0,Black,82.0,3.0,88.0,11500,20,60,125,Not Suitable
+147,Jharkhand,Bokaro,80.0,45.0,38.0,Red,80.0,5.0,83.0,10800,22,65,130,Not Suitable
+148,Jharkhand,Hazaribagh,55.0,72.0,70.0,Red,65.0,18.0,58.0,9800,25,70,135,Suitable
+149,West Bengal,Howrah,82.0,50.0,45.0,Alluvial,92.0,5.0,85.0,14500,28,75,140,Not Suitable
+150,West Bengal,Durgapur,75.0,55.0,50.0,Alluvial,85.0,8.0,78.0,12500,26,72,135,Not Suitable
+151,West Bengal,Asansol,78.0,52.0,48.0,Alluvial,87.0,6.0,82.0,11800,24,68,130,Not Suitable
+152,West Bengal,Siliguri More,65.0,60.0,58.0,Alluvial,75.0,12.0,70.0,11200,22,65,125,Not Suitable
+153,West Bengal,Bardhaman,60.0,65.0,62.0,Alluvial,72.0,15.0,65.0,10500,25,70,132,Suitable
+154,West Bengal,Malda,62.0,62.0,60.0,Alluvial,75.0,10.0,68.0,9800,20,62,120,Not Suitable
+155,West Bengal,Kharagpur,58.0,68.0,65.0,Alluvial,70.0,14.0,62.0,10200,23,68,128,Suitable
+156,Odisha,Puri,42.0,82.0,85.0,Alluvial,65.0,22.0,45.0,11500,30,80,145,Suitable
+157,Odisha,Cuttack,58.0,70.0,68.0,Alluvial,75.0,12.0,62.0,10800,26,75,135,Suitable
+158,Odisha,Rourkela,65.0,60.0,55.0,Red,78.0,8.0,70.0,11200,22,65,125,Not Suitable
+159,Odisha,Sambalpur,55.0,72.0,70.0,Red,70.0,16.0,58.0,10500,24,70,130,Suitable
+160,Odisha,Balasore,48.0,75.0,72.0,Alluvial,68.0,18.0,52.0,9800,25,72,132,Suitable
+161,Chhattisgarh,Bhilai,68.0,60.0,55.0,Red,80.0,7.0,72.0,11500,24,68,130,Not Suitable
+162,Chhattisgarh,Raigarh,55.0,70.0,68.0,Red,68.0,16.0,58.0,10200,22,65,125,Suitable
+163,Chhattisgarh,Korba,80.0,45.0,40.0,Black,78.0,4.0,83.0,10800,18,55,115,Not Suitable
+164,Chhattisgarh,Durg,62.0,65.0,62.0,Red,75.0,10.0,65.0,11200,26,72,135,Suitable
+165,Chhattisgarh,Rajnandgaon,50.0,75.0,72.0,Black,65.0,19.0,52.0,9800,23,68,128,Suitable
+166,Madhya Pradesh,Gwalior,72.0,55.0,50.0,Black,80.0,8.0,75.0,12500,26,75,135,Not Suitable
+167,Madhya Pradesh,Jabalpur,65.0,62.0,58.0,Black,78.0,12.0,68.0,11800,28,78,140,Suitable
+168,Madhya Pradesh,Ujjain,58.0,68.0,65.0,Black,72.0,15.0,62.0,11200,25,72,132,Suitable
+169,Madhya Pradesh,Sagar,55.0,72.0,70.0,Black,68.0,17.0,58.0,10500,23,70,128,Suitable
+170,Madhya Pradesh,Dewas,60.0,65.0,62.0,Black,70.0,14.0,65.0,10800,24,68,130,Suitable
+171,Madhya Pradesh,Satna,52.0,70.0,68.0,Red,65.0,18.0,55.0,9800,22,65,125,Suitable
+172,Madhya Pradesh,Ratlam,62.0,62.0,58.0,Black,72.0,11.0,68.0,10200,20,60,120,Not Suitable
+173,Madhya Pradesh,Rewa,50.0,75.0,72.0,Red,68.0,16.0,52.0,9500,25,70,130,Suitable
+174,Gujarat,Rajkot,65.0,65.0,62.0,Black,78.0,10.0,68.0,13500,30,82,150,Suitable
+175,Gujarat,Bhavnagar,62.0,62.0,58.0,Black,75.0,12.0,65.0,12800,26,75,140,Suitable
+176,Gujarat,Jamnagar,58.0,68.0,65.0,Black,72.0,15.0,62.0,12200,28,78,145,Suitable
+177,Gujarat,Gandhinagar,52.0,75.0,72.0,Alluvial,70.0,18.0,55.0,14500,32,85,155,Suitable
+178,Gujarat,Gandhidham,60.0,65.0,60.0,Alluvial,74.0,10.0,65.0,13200,25,70,135,Suitable
+179,Gujarat,Anand,55.0,72.0,70.0,Black,68.0,16.0,58.0,11800,26,75,140,Suitable
+180,Gujarat,Nadiad,58.0,70.0,68.0,Black,70.0,14.0,62.0,12500,27,76,142,Suitable
+181,Maharashtra,Nagpur,70.0,60.0,55.0,Black,82.0,8.0,75.0,15500,35,90,160,Not Suitable
+182,Maharashtra,Nashik,62.0,68.0,65.0,Black,78.0,12.0,65.0,14500,32,85,155,Suitable
+183,Maharashtra,Thane,82.0,55.0,50.0,Alluvial,92.0,5.0,85.0,20000,38,95,170,Not Suitable
+184,Maharashtra,Pimpri-Chinchwad,68.0,70.0,68.0,Black,84.0,10.0,72.0,17500,34,88,162,Suitable
+185,Maharashtra,Kalyan-Dombivli,78.0,58.0,53.0,Alluvial,88.0,6.0,82.0,18500,30,80,155,Not Suitable
+186,Maharashtra,Vasai-Virar,75.0,60.0,55.0,Alluvial,85.0,8.0,78.0,17800,28,78,150,Not Suitable
+187,Maharashtra,Aurangabad,65.0,65.0,62.0,Black,80.0,10.0,68.0,14200,30,82,148,Suitable
+188,Maharashtra,Solapur,62.0,62.0,58.0,Black,75.0,12.0,65.0,13500,26,75,140,Suitable
+189,Maharashtra,Bhiwandi,80.0,50.0,45.0,Alluvial,87.0,4.0,83.0,16500,22,65,135,Not Suitable
+190,Maharashtra,Amravati,58.0,70.0,68.0,Black,72.0,15.0,62.0,12800,28,80,145,Suitable
+191,Maharashtra,Nanded,55.0,72.0,70.0,Black,70.0,16.0,58.0,11800,26,75,138,Suitable
+192,Maharashtra,Kolhapur,50.0,78.0,75.0,Black,68.0,18.0,52.0,12500,30,82,150,Suitable
+193,Maharashtra,Ulhasnagar,77.0,52.0,48.0,Alluvial,84.0,5.0,80.0,17200,24,70,140,Not Suitable
+194,Maharashtra,Sangli,48.0,75.0,72.0,Black,65.0,19.0,50.0,11500,27,78,142,Suitable
+195,Maharashtra,Mira-Bhayandar,79.0,56.0,52.0,Alluvial,89.0,7.0,82.0,19200,31,84,158,Not Suitable
+196,Maharashtra,Jalgaon,60.0,65.0,62.0,Black,73.0,13.0,65.0,12200,25,72,135,Suitable
+197,Maharashtra,Akola,62.0,62.0,58.0,Black,75.0,11.0,68.0,11800,23,68,130,Not Suitable
+198,Maharashtra,Latur,55.0,70.0,68.0,Black,68.0,17.0,58.0,11200,26,75,136,Suitable
+199,Maharashtra,Dhule,58.0,68.0,65.0,Black,70.0,14.0,62.0,11500,24,70,132,Suitable
+200,Maharashtra,Ahmednagar,52.0,72.0,70.0,Black,67.0,16.0,55.0,10800,25,72,130,Suitable
+201,Karnataka,Bengaluru,75.0,65.0,60.0,Red,95.0,5.0,80.0,22000,45,100,180,Not Suitable
+202,Karnataka,Mysuru,52.0,78.0,75.0,Red,72.0,16.0,55.0,14500,32,85,155,Suitable
+203,Karnataka,Mangaluru,45.0,82.0,80.0,Laterite,68.0,20.0,48.0,13800,35,88,160,Suitable
+204,Karnataka,Hubballi-Dharwad,58.0,70.0,68.0,Black,75.0,12.0,62.0,12500,30,80,145,Suitable
+205,Karnataka,Belagavi,55.0,72.0,70.0,Black,72.0,14.0,58.0,11800,28,78,140,Suitable
+206,Karnataka,Kalaburagi,62.0,65.0,62.0,Red,78.0,10.0,68.0,11200,25,72,135,Suitable
+207,Karnataka,Davanagere,60.0,68.0,65.0,Red,75.0,11.0,65.0,11500,26,75,138,Suitable
+208,Karnataka,Ballari,65.0,60.0,55.0,Red,80.0,8.0,70.0,12200,22,65,130,Not Suitable
+209,Karnataka,Tumakuru,58.0,68.0,65.0,Red,73.0,13.0,62.0,10800,24,70,132,Suitable
+210,Karnataka,Shivamogga,50.0,75.0,72.0,Red,68.0,17.0,52.0,10500,26,75,135,Suitable
+211,Karnataka,Hassan,48.0,78.0,75.0,Red,65.0,19.0,50.0,9800,25,72,130,Suitable
+212,Kerala,Thiruvananthapuram,40.0,88.0,85.0,Laterite,70.0,25.0,42.0,15000,38,90,160,Suitable
+213,Kerala,Kozhikode,42.0,85.0,82.0,Laterite,70.0,22.0,45.0,13200,36,88,152,Suitable
+214,Kerala,Kollam,40.0,82.0,80.0,Laterite,68.0,20.0,42.0,12500,33,85,148,Suitable
+215,Kerala,Thrissur,38.0,88.0,85.0,Laterite,65.0,24.0,40.0,13800,35,90,155,Suitable
+216,Kerala,Palakkad,45.0,80.0,78.0,Laterite,72.0,18.0,48.0,11800,30,82,142,Suitable
+217,Kerala,Kannur,42.0,82.0,80.0,Laterite,70.0,20.0,45.0,12800,32,85,150,Suitable
+218,Kerala,Alappuzha,35.0,90.0,88.0,Laterite,62.0,26.0,38.0,13500,34,88,154,Suitable
+219,Kerala,Kottayam,38.0,88.0,85.0,Laterite,65.0,24.0,40.0,14200,36,90,158,Suitable
+220,Kerala,Malappuram,48.0,78.0,75.0,Laterite,75.0,16.0,52.0,12200,28,80,145,Suitable
+221,Kerala,Manjeri,45.0,80.0,78.0,Laterite,72.0,18.0,48.0,11500,26,78,140,Suitable
+222,Tamil Nadu,Chennai,82.0,58.0,52.0,Alluvial,92.0,4.0,85.0,19500,40,95,175,Not Suitable
+223,Tamil Nadu,Coimbatore,58.0,75.0,72.0,Red,80.0,12.0,62.0,15500,35,88,160,Suitable
+224,Tamil Nadu,Madurai,62.0,70.0,68.0,Red,82.0,10.0,68.0,14200,32,85,155,Suitable
+225,Tamil Nadu,Salem,55.0,75.0,72.0,Red,72.0,15.0,58.0,11200,28,80,142,Suitable
+226,Tamil Nadu,Tiruchirappalli,52.0,78.0,75.0,Red,70.0,17.0,55.0,10800,30,82,145,Suitable
+227,Tamil Nadu,Tiruppur,60.0,70.0,68.0,Red,78.0,10.0,65.0,11500,26,75,138,Suitable
+228,Tamil Nadu,Erode,58.0,72.0,70.0,Red,75.0,12.0,62.0,11000,27,78,140,Suitable
+229,Tamil Nadu,Vellore,55.0,75.0,72.0,Red,72.0,14.0,58.0,10500,28,80,142,Suitable
+230,Tamil Nadu,Tuticorin,62.0,65.0,62.0,Alluvial,80.0,8.0,68.0,11800,24,70,135,Not Suitable
+231,Tamil Nadu,Dindigul,50.0,78.0,75.0,Red,68.0,18.0,52.0,9800,26,75,138,Suitable
+232,Tamil Nadu,Thanjavur,48.0,80.0,78.0,Alluvial,65.0,20.0,50.0,9500,28,80,140,Suitable
+233,Tamil Nadu,Hosur,65.0,68.0,65.0,Red,82.0,6.0,70.0,13500,25,72,132,Not Suitable
+234,Tamil Nadu,Nagercoil,45.0,82.0,80.0,Laterite,70.0,22.0,48.0,11200,30,82,148,Suitable
+235,Andhra Pradesh,Visakhapatnam,52.0,78.0,75.0,Alluvial,75.0,15.0,55.0,13500,35,85,155,Suitable
+236,Andhra Pradesh,Vijayawada,65.0,68.0,65.0,Alluvial,82.0,8.0,70.0,14500,30,80,150,Not Suitable
+237,Andhra Pradesh,Guntur,62.0,70.0,68.0,Black,80.0,10.0,68.0,12800,28,78,145,Suitable
+238,Andhra Pradesh,Srikakulam,40.0,80.0,78.0,Alluvial,65.0,22.0,42.0,9800,26,75,135,Suitable
+239,Andhra Pradesh,Vizianagaram,42.0,82.0,80.0,Alluvial,68.0,20.0,45.0,10200,28,78,140,Suitable
+240,Andhra Pradesh,Machilipatnam,45.0,78.0,75.0,Alluvial,70.0,18.0,48.0,10500,25,72,135,Suitable
+241,Andhra Pradesh,Proddatur,55.0,72.0,70.0,Red,75.0,14.0,58.0,11200,26,75,138,Suitable
+242,Andhra Pradesh,Hindupur,58.0,70.0,68.0,Red,78.0,12.0,62.0,11800,24,70,135,Suitable
+243,Andhra Pradesh,Tadipatri,60.0,68.0,65.0,Red,80.0,10.0,65.0,12200,22,65,130,Not Suitable
+244,Andhra Pradesh,Dharmavaram,62.0,65.0,62.0,Red,82.0,8.0,68.0,12500,20,62,125,Not Suitable
+245,Andhra Pradesh,Gudivada,48.0,75.0,72.0,Black,72.0,16.0,52.0,10800,25,72,132,Suitable
+246,Andhra Pradesh,Nandyal,52.0,72.0,70.0,Black,75.0,13.0,55.0,11200,26,75,135,Suitable
+247,Andhra Pradesh,Chilakaluripet,50.0,75.0,72.0,Black,70.0,15.0,52.0,10500,24,70,130,Suitable
+248,Telangana,Hyderabad,78.0,62.0,58.0,Black,90.0,6.0,82.0,18500,42,95,180,Not Suitable
+249,Telangana,Warangal,58.0,72.0,70.0,Red,75.0,14.0,62.0,12500,30,82,148,Suitable
+250,Telangana,Sircilla,45.0,78.0,76.0,Black,65.0,21.0,48.0,10800,24,72,135,Suitable
+251,Telangana,Hanamkonda,48.0,80.0,78.0,Red,68.0,19.0,50.0,11200,26,75,140,Suitable
+252,Telangana,Ramagundam,65.0,60.0,55.0,Black,78.0,8.0,70.0,11800,20,65,125,Not Suitable
+253,Telangana,Khammam Rural,42.0,82.0,80.0,Black,60.0,24.0,45.0,10200,28,80,145,Suitable
+254,Telangana,Nirmal,40.0,84.0,82.0,Red,58.0,26.0,42.0,9800,26,78,140,Suitable
+255,Telangana,Mancherial,55.0,70.0,68.0,Black,70.0,16.0,58.0,10500,22,68,130,Suitable
+256,Telangana,Kamareddy,48.0,75.0,72.0,Red,65.0,20.0,50.0,9500,24,70,132,Suitable
+257,Telangana,Wanaparthy,45.0,78.0,75.0,Red,62.0,22.0,48.0,9200,22,65,128,Suitable
+258,Telangana,Gadwal,42.0,80.0,78.0,Black,60.0,24.0,45.0,9000,20,62,125,Suitable
+259,Telangana,Suryapet,50.0,75.0,72.0,Black,68.0,18.0,52.0,10200,25,72,135,Suitable
+260,Assam,Guwahati,68.0,65.0,62.0,Alluvial,80.0,10.0,72.0,12500,32,80,150,Not Suitable
+261,Assam,Silchar,55.0,72.0,70.0,Alluvial,70.0,18.0,58.0,10500,26,75,135,Suitable
+262,Assam,Dibrugarh,50.0,75.0,72.0,Alluvial,68.0,20.0,52.0,9800,28,78,140,Suitable
+263,Assam,Nagaon,58.0,68.0,65.0,Alluvial,72.0,15.0,62.0,9500,24,70,130,Suitable
+264,Assam,Tinsukia,52.0,72.0,70.0,Alluvial,70.0,17.0,55.0,10200,25,72,132,Suitable
+265,Assam,Jorhat,48.0,78.0,75.0,Alluvial,65.0,22.0,50.0,10800,30,82,145,Suitable
+266,Assam,Bongaigaon,62.0,62.0,58.0,Alluvial,75.0,10.0,68.0,9200,20,62,120,Not Suitable
+267,Assam,Tezpur,45.0,80.0,78.0,Alluvial,62.0,24.0,48.0,11200,28,80,148,Suitable
+268,Assam,Karimganj,42.0,82.0,80.0,Alluvial,60.0,26.0,45.0,10500,26,78,142,Suitable
+269,Assam,Sivasagar,40.0,84.0,82.0,Alluvial,58.0,28.0,42.0,9800,24,75,138,Suitable
+270,Assam,Goalpara,55.0,70.0,68.0,Alluvial,65.0,19.0,58.0,9500,22,68,130,Suitable
+271,Goa,Panaji,38.0,90.0,88.0,Laterite,65.0,25.0,40.0,16500,35,85,160,Suitable
+272,Goa,Vasco da Gama,45.0,85.0,82.0,Laterite,70.0,20.0,48.0,14800,32,85,155,Suitable
+273,Goa,Margao,42.0,88.0,85.0,Laterite,68.0,22.0,45.0,14200,34,88,158,Suitable
+201,Karnataka,Chikkaballapur,48.0,78.0,75.0,Red,65.0,18.0,50.0,9800,22,68,130,Suitable
+202,Karnataka,Chitradurga,55.0,72.0,70.0,Red,70.0,15.0,58.0,10500,25,72,135,Suitable
+203,Karnataka,Kolar,60.0,68.0,65.0,Red,75.0,12.0,65.0,11200,20,65,125,Not Suitable
+204,Karnataka,Mandya,50.0,75.0,72.0,Black,68.0,16.0,52.0,10200,26,75,138,Suitable
+205,Karnataka,Bidar,58.0,70.0,68.0,Black,72.0,14.0,62.0,10800,24,70,132,Suitable
+206,Karnataka,Raichur,62.0,65.0,62.0,Red,78.0,10.0,68.0,11500,22,65,128,Not Suitable
+207,Karnataka,Hospet,65.0,60.0,58.0,Red,80.0,8.0,70.0,12200,18,60,120,Not Suitable
+208,Karnataka,Gadag,52.0,72.0,70.0,Black,70.0,17.0,55.0,9800,23,68,125,Suitable
+209,Karnataka,Bagalkot,55.0,70.0,68.0,Black,73.0,13.0,58.0,10200,25,72,130,Suitable
+210,Karnataka,Bijapur,60.0,68.0,65.0,Black,76.0,11.0,65.0,10800,21,67,127,Not Suitable
+211,Karnataka,Chamrajnagar,45.0,80.0,78.0,Red,62.0,20.0,48.0,9500,24,70,132,Suitable
+212,Karnataka,Kodagu,38.0,85.0,83.0,Laterite,55.0,28.0,40.0,11000,28,75,142,Suitable
+213,Kerala,Idukki,32.0,90.0,88.0,Laterite,50.0,32.0,35.0,12500,30,80,145,Suitable
+214,Kerala,Wayanad,35.0,88.0,85.0,Laterite,52.0,30.0,38.0,11800,28,78,140,Suitable
+215,Kerala,Pathanamthitta,40.0,85.0,82.0,Laterite,58.0,26.0,42.0,12800,32,85,150,Suitable
+216,Kerala,Kasaragod,42.0,82.0,80.0,Laterite,62.0,22.0,45.0,11500,26,75,138,Suitable
+217,Kerala,Changanassery,45.0,80.0,78.0,Laterite,65.0,20.0,48.0,12200,28,80,142,Suitable
+218,Kerala,Thalassery,48.0,78.0,75.0,Laterite,68.0,18.0,50.0,11800,25,72,135,Suitable
+219,Kerala,Neyyattinkara,52.0,75.0,72.0,Laterite,72.0,15.0,55.0,12500,27,76,140,Suitable
+220,Kerala,Muvattupuzha,50.0,77.0,74.0,Laterite,70.0,17.0,52.0,12000,26,75,138,Suitable
+221,Kerala,Paravur,55.0,72.0,70.0,Laterite,75.0,13.0,58.0,12800,23,68,132,Not Suitable
+222,Kerala,Perinthalmanna,58.0,70.0,68.0,Laterite,78.0,11.0,62.0,12200,20,65,128,Not Suitable
+223,Kerala,Pala,45.0,82.0,80.0,Laterite,65.0,21.0,48.0,11500,27,78,142,Suitable
+224,Kerala,Kattappana,40.0,84.0,82.0,Laterite,60.0,25.0,42.0,10500,25,72,135,Suitable
+225,Tamil Nadu,Thiruvallur,65.0,65.0,60.0,Alluvial,82.0,7.0,70.0,13500,25,72,135,Not Suitable
+226,Tamil Nadu,Kanchipuram,60.0,70.0,68.0,Alluvial,78.0,10.0,65.0,14200,30,80,145,Suitable
+227,Tamil Nadu,Tiruvannamalai,52.0,75.0,72.0,Red,70.0,16.0,55.0,10500,26,75,135,Suitable
+228,Tamil Nadu,Viluppuram,55.0,72.0,70.0,Red,72.0,14.0,58.0,9800,24,70,130,Suitable
+229,Tamil Nadu,Namakkal,58.0,70.0,68.0,Red,75.0,12.0,62.0,10200,22,68,128,Suitable
+230,Tamil Nadu,Theni,50.0,78.0,75.0,Red,68.0,18.0,52.0,9500,26,75,138,Suitable
+231,Tamil Nadu,Virudhunagar,62.0,65.0,62.0,Red,80.0,8.0,68.0,10800,20,62,122,Not Suitable
+232,Tamil Nadu,Sivaganga,48.0,80.0,78.0,Alluvial,65.0,20.0,50.0,9200,28,80,140,Suitable
+233,Tamil Nadu,Ramanathapuram,45.0,82.0,80.0,Alluvial,62.0,22.0,48.0,9800,26,78,142,Suitable
+234,Tamil Nadu,Thoothukudi Rural,55.0,75.0,72.0,Alluvial,70.0,16.0,58.0,10200,24,70,132,Suitable
+235,Tamil Nadu,Krishnagiri,60.0,68.0,65.0,Red,78.0,9.0,65.0,11500,26,75,138,Suitable
+236,Tamil Nadu,Dharmapuri,58.0,70.0,68.0,Red,75.0,11.0,62.0,10500,23,68,130,Suitable
+237,Tamil Nadu,Tirupathur,52.0,72.0,70.0,Red,72.0,13.0,55.0,9800,25,72,132,Suitable
+238,Tamil Nadu,Nilgiris,35.0,88.0,85.0,Mountain,55.0,30.0,38.0,12800,32,85,155,Suitable
+239,Tamil Nadu,Cuddalore,62.0,62.0,58.0,Alluvial,80.0,6.0,68.0,11200,22,65,125,Not Suitable
+240,Tamil Nadu,Nagapattinam,55.0,70.0,68.0,Alluvial,75.0,12.0,58.0,10500,24,70,130,Suitable
+241,Tamil Nadu,Perambalur,50.0,75.0,72.0,Red,68.0,17.0,52.0,9500,26,75,135,Suitable
+242,Tamil Nadu,Ariyalur,48.0,77.0,74.0,Red,65.0,19.0,50.0,9200,24,72,130,Suitable
+243,Tamil Nadu,Karur,60.0,68.0,65.0,Red,77.0,10.0,65.0,10800,23,70,132,Suitable
+244,Andhra Pradesh,Puttur,45.0,80.0,78.0,Red,65.0,21.0,48.0,10200,26,75,140,Suitable
+245,Andhra Pradesh,Tanuku,50.0,78.0,75.0,Alluvial,68.0,19.0,52.0,10800,28,78,142,Suitable
+246,Andhra Pradesh,Bhimavaram,52.0,75.0,72.0,Alluvial,70.0,17.0,55.0,11200,25,72,135,Suitable
+247,Andhra Pradesh,Narasaraopet,58.0,70.0,68.0,Black,75.0,13.0,62.0,11800,24,70,132,Suitable
+248,Andhra Pradesh,Markapur,55.0,72.0,70.0,Red,72.0,15.0,58.0,11000,23,68,128,Suitable
+249,Andhra Pradesh,Adoni,62.0,65.0,62.0,Red,78.0,9.0,68.0,11500,20,65,125,Not Suitable
+250,Andhra Pradesh,Madanapalle,48.0,78.0,75.0,Red,67.0,18.0,50.0,9800,25,72,135,Suitable
+251,Andhra Pradesh,Jaggayyapeta,52.0,75.0,72.0,Black,70.0,16.0,55.0,10200,26,75,138,Suitable
+252,Andhra Pradesh,Sattenapalle,55.0,72.0,70.0,Black,73.0,14.0,58.0,10500,24,70,132,Suitable
+253,Andhra Pradesh,Rayadurg,60.0,68.0,65.0,Red,76.0,11.0,65.0,11000,21,67,127,Not Suitable
+254,Andhra Pradesh,Bobbili,45.0,80.0,78.0,Alluvial,64.0,20.0,48.0,9800,27,76,139,Suitable
+255,Andhra Pradesh,Amalapuram,50.0,78.0,75.0,Alluvial,68.0,18.0,52.0,10200,25,72,135,Suitable
+256,Andhra Pradesh,Mandapeta,52.0,75.0,72.0,Alluvial,71.0,16.0,55.0,10500,24,70,132,Suitable
+257,Andhra Pradesh,Samalkot,55.0,72.0,70.0,Alluvial,74.0,14.0,58.0,10800,22,68,130,Suitable
+258,Andhra Pradesh,Pithapuram,58.0,70.0,68.0,Alluvial,77.0,12.0,62.0,11200,20,65,128,Suitable
+259,Andhra Pradesh,Tuni,60.0,68.0,65.0,Alluvial,80.0,10.0,65.0,11500,18,62,125,Not Suitable
+260,Andhra Pradesh,Palakollu,48.0,77.0,74.0,Alluvial,69.0,17.0,50.0,10000,26,75,136,Suitable
+261,Andhra Pradesh,Kovvur,50.0,75.0,72.0,Alluvial,72.0,15.0,52.0,10300,25,72,134,Suitable
+262,Andhra Pradesh,Badvel,55.0,72.0,70.0,Red,75.0,13.0,58.0,10600,23,68,130,Suitable
+263,Andhra Pradesh,Kadiri,58.0,70.0,68.0,Red,78.0,11.0,62.0,10900,21,65,128,Suitable
+264,Andhra Pradesh,Kavali,52.0,75.0,72.0,Alluvial,71.0,16.0,55.0,10200,26,75,135,Suitable
+265,Telangana,Medak,50.0,75.0,72.0,Black,65.0,20.0,52.0,9800,24,70,132,Suitable
+266,Telangana,Narayanpet,45.0,78.0,75.0,Red,60.0,24.0,48.0,9200,22,65,128,Suitable
+267,Telangana,Jangaon,52.0,75.0,72.0,Black,68.0,18.0,55.0,10200,26,75,135,Suitable
+268,Telangana,Bhupalpalle,48.0,78.0,76.0,Red,62.0,22.0,50.0,9500,24,72,134,Suitable
+269,Telangana,Yadadri,55.0,72.0,70.0,Red,70.0,16.0,58.0,10500,25,72,132,Suitable
+270,Telangana,Asifabad,42.0,80.0,78.0,Red,58.0,26.0,45.0,8800,23,68,130,Suitable
+271,Telangana,Kagaznagar,58.0,68.0,65.0,Black,72.0,14.0,62.0,9800,20,62,125,Suitable
+272,Telangana,Metpalle,52.0,72.0,70.0,Black,68.0,17.0,55.0,9500,24,70,130,Suitable
+273,Telangana,Korutla,50.0,75.0,72.0,Black,65.0,19.0,52.0,9200,25,72,132,Suitable
+274,Telangana,Armoor,55.0,70.0,68.0,Black,70.0,15.0,58.0,10200,23,68,128,Suitable
+275,Telangana,Bodhan,58.0,68.0,65.0,Black,73.0,13.0,62.0,10500,21,65,126,Suitable
+276,Telangana,Chityal,48.0,77.0,74.0,Red,62.0,21.0,50.0,9500,25,72,133,Suitable
+277,Telangana,Madhira,52.0,75.0,72.0,Black,68.0,18.0,55.0,9800,24,70,130,Suitable
+278,Telangana,Wyra,50.0,76.0,73.0,Black,65.0,20.0,52.0,9600,23,69,129,Suitable
+279,Telangana,Sathupalle,55.0,72.0,70.0,Black,70.0,16.0,58.0,10100,22,67,128,Suitable
+280,Telangana,Palwancha,60.0,68.0,65.0,Black,75.0,12.0,65.0,10800,20,65,125,Not Suitable
+281,Assam,Mangaldoi,52.0,72.0,70.0,Alluvial,65.0,19.0,55.0,9500,24,70,132,Suitable
+282,Assam,North Lakhimpur,50.0,75.0,72.0,Alluvial,62.0,21.0,52.0,9200,26,75,135,Suitable
+283,Assam,Dhubri,58.0,68.0,65.0,Alluvial,70.0,15.0,62.0,8800,22,65,125,Suitable
+284,Assam,Kokrajhar,55.0,70.0,68.0,Alluvial,68.0,17.0,58.0,9000,23,68,128,Suitable
+285,Assam,Barpeta,60.0,65.0,62.0,Alluvial,72.0,13.0,65.0,9200,20,62,120,Not Suitable
+286,Assam,Goalpara Town,48.0,75.0,72.0,Alluvial,65.0,18.0,50.0,8800,24,70,130,Suitable
+287,Assam,Morigaon,52.0,72.0,70.0,Alluvial,68.0,16.0,55.0,9000,23,68,128,Suitable
+288,Assam,Hailakandi,50.0,74.0,71.0,Alluvial,64.0,20.0,52.0,8700,25,72,131,Suitable
+289,Assam,Dhemaji,45.0,78.0,75.0,Alluvial,60.0,24.0,48.0,9200,26,75,136,Suitable
+290,Assam,Golaghat,48.0,76.0,73.0,Alluvial,62.0,22.0,50.0,9400,24,71,130,Suitable
+291,Goa,Bicholim,38.0,87.0,85.0,Laterite,58.0,26.0,40.0,12000,26,75,140,Suitable
+292,Goa,Sanquelim,40.0,85.0,83.0,Laterite,60.0,24.0,42.0,12500,28,78,142,Suitable
+293,Goa,Valpoi,35.0,89.0,87.0,Laterite,55.0,28.0,38.0,11500,24,72,135,Suitable
+294,Goa,Curchorem,42.0,84.0,82.0,Laterite,62.0,22.0,45.0,13000,30,80,148,Suitable
+295,Goa,Quepem,40.0,86.0,84.0,Laterite,58.0,26.0,42.0,12200,26,75,142,Suitable
+296,Goa,Sanguem,38.0,88.0,86.0,Laterite,56.0,27.0,40.0,11800,25,73,138,Suitable
+297,Goa,Pernem,45.0,82.0,80.0,Laterite,64.0,20.0,48.0,13500,29,79,145,Suitable
+298,Goa,Canacona,42.0,85.0,83.0,Laterite,60.0,24.0,45.0,12800,27,76,140,Suitable
+299,Goa,Dharbandora,40.0,87.0,85.0,Laterite,58.0,26.0,42.0,12400,25,72,136,Suitable
+300,Goa,Salcete,48.0,80.0,78.0,Laterite,66.0,18.0,50.0,14000,31,82,150,Suitable
+351,Punjab,Moga,60.0,65.0,62.0,Alluvial,75.0,12.0,65.0,11800,26,75,138,Suitable
+352,Punjab,Hoshiarpur,55.0,72.0,70.0,Alluvial,70.0,16.0,58.0,12500,28,80,145,Suitable
+353,Punjab,Kapurthala,58.0,70.0,68.0,Alluvial,72.0,14.0,62.0,12200,27,78,142,Suitable
+354,Punjab,Firozpur,65.0,60.0,58.0,Alluvial,78.0,9.0,70.0,11500,22,65,130,Not Suitable
+355,Punjab,Fatehgarh Sahib,52.0,75.0,72.0,Alluvial,68.0,17.0,55.0,11200,28,80,140,Suitable
+356,Punjab,Rupnagar,50.0,77.0,74.0,Alluvial,65.0,19.0,52.0,10800,26,75,136,Suitable
+357,Punjab,SAS Nagar,62.0,68.0,65.0,Alluvial,80.0,8.0,68.0,14500,30,82,150,Suitable
+358,Punjab,Barnala,58.0,65.0,62.0,Alluvial,75.0,11.0,62.0,11200,24,70,132,Suitable
+359,Punjab,Sangrur,60.0,62.0,58.0,Alluvial,77.0,10.0,65.0,11500,23,68,130,Not Suitable
+360,Punjab,Muktsar,62.0,60.0,55.0,Alluvial,78.0,8.0,68.0,11000,21,65,125,Not Suitable
+361,Haryana,Sirsa,65.0,60.0,55.0,Alluvial,78.0,9.0,70.0,11800,22,65,128,Not Suitable
+362,Haryana,Fatehabad,62.0,62.0,58.0,Alluvial,75.0,11.0,65.0,11500,24,70,132,Suitable
+363,Haryana,Jind,68.0,58.0,52.0,Alluvial,80.0,7.0,72.0,12200,23,68,130,Not Suitable
+364,Haryana,Sonipat,72.0,55.0,50.0,Alluvial,85.0,6.0,76.0,13800,28,78,142,Not Suitable
+365,Haryana,Bahadurgarh,75.0,52.0,48.0,Alluvial,88.0,5.0,80.0,14500,26,75,140,Not Suitable
+366,Haryana,Palwal,70.0,58.0,53.0,Alluvial,82.0,8.0,74.0,12800,25,72,135,Not Suitable
+367,Haryana,Rewari,65.0,65.0,62.0,Alluvial,78.0,10.0,68.0,13500,28,80,145,Suitable
+368,Haryana,Narnaul,60.0,68.0,65.0,Alluvial,72.0,14.0,65.0,12200,26,75,138,Suitable
+369,Haryana,Bhiwani,62.0,62.0,58.0,Alluvial,75.0,12.0,65.0,11800,24,70,132,Suitable
+370,Haryana,Mahendragarh,58.0,68.0,65.0,Alluvial,70.0,16.0,62.0,11200,25,72,135,Suitable
+371,Uttar Pradesh,Shahjahanpur,72.0,55.0,50.0,Alluvial,82.0,8.0,75.0,11500,24,70,130,Not Suitable
+372,Uttar Pradesh,Rampur,75.0,52.0,48.0,Alluvial,84.0,6.0,78.0,11800,22,68,128,Not Suitable
+373,Uttar Pradesh,Modinagar,78.0,50.0,45.0,Alluvial,86.0,5.0,82.0,12500,20,65,125,Not Suitable
+374,Uttar Pradesh,Khora,80.0,48.0,42.0,Alluvial,88.0,4.0,84.0,13200,18,62,122,Not Suitable
+375,Uttar Pradesh,Bulandshahr,70.0,58.0,53.0,Alluvial,80.0,9.0,74.0,11200,25,72,135,Not Suitable
+376,Uttar Pradesh,Hapur,68.0,60.0,55.0,Alluvial,78.0,10.0,72.0,10800,23,68,130,Suitable
+377,Uttar Pradesh,Etawah,65.0,62.0,58.0,Alluvial,75.0,12.0,70.0,10500,24,70,132,Suitable
+378,Uttar Pradesh,Muzaffarnagar,72.0,55.0,50.0,Alluvial,82.0,7.0,75.0,11500,22,65,128,Not Suitable
+379,Uttar Pradesh,Orai,62.0,65.0,62.0,Alluvial,75.0,11.0,68.0,10200,23,68,130,Suitable
+380,Uttar Pradesh,Banda,60.0,68.0,65.0,Alluvial,72.0,14.0,65.0,9800,25,72,135,Suitable
+381,Uttar Pradesh,Pilibhit,58.0,70.0,68.0,Alluvial,70.0,16.0,62.0,9500,24,70,132,Suitable
+382,Uttar Pradesh,Barabanki,65.0,62.0,58.0,Alluvial,76.0,10.0,70.0,10200,22,65,128,Suitable
+383,Uttar Pradesh,Chandausi,68.0,60.0,55.0,Alluvial,78.0,8.0,72.0,10800,20,62,125,Not Suitable
+384,Uttar Pradesh,Bahraich,62.0,65.0,62.0,Alluvial,74.0,12.0,68.0,9800,23,68,130,Suitable
+385,Uttar Pradesh,Ayodhya,55.0,72.0,70.0,Alluvial,68.0,17.0,58.0,9200,26,75,138,Suitable
+386,Uttar Pradesh,Sitapur,60.0,68.0,65.0,Alluvial,72.0,14.0,65.0,9500,24,70,132,Suitable
+387,Uttar Pradesh,Ballia,58.0,70.0,68.0,Alluvial,70.0,16.0,62.0,9200,23,68,130,Suitable
+388,Uttar Pradesh,Lalitpur,52.0,75.0,72.0,Black,65.0,19.0,55.0,8800,25,72,132,Suitable
+389,Uttar Pradesh,Mainpuri,55.0,72.0,70.0,Alluvial,68.0,17.0,58.0,9000,24,70,130,Suitable
+390,Uttar Pradesh,Deoria,60.0,68.0,65.0,Alluvial,72.0,13.0,65.0,9200,22,65,128,Suitable
+391,Uttar Pradesh,Sultanpur,62.0,65.0,62.0,Alluvial,75.0,11.0,68.0,9500,21,64,127,Suitable
+392,Uttar Pradesh,Unnao,65.0,62.0,58.0,Alluvial,78.0,9.0,70.0,9800,20,62,125,Not Suitable
+393,Uttar Pradesh,Hathras,68.0,60.0,55.0,Alluvial,80.0,8.0,72.0,10200,19,60,122,Not Suitable
+394,Uttar Pradesh,Farrukhabad,70.0,58.0,53.0,Alluvial,82.0,7.0,74.0,10500,21,65,128,Not Suitable
+395,Uttar Pradesh,Rae Bareli,62.0,65.0,62.0,Alluvial,75.0,12.0,68.0,9800,23,68,130,Suitable
+396,Uttar Pradesh,Basti,58.0,68.0,65.0,Alluvial,72.0,14.0,62.0,9500,24,70,132,Suitable
+397,Uttar Pradesh,Azamgarh,60.0,65.0,62.0,Alluvial,74.0,13.0,65.0,9200,22,65,128,Suitable
+398,Uttar Pradesh,Mirzapur,65.0,60.0,55.0,Alluvial,78.0,10.0,70.0,9800,20,62,125,Not Suitable
+399,Uttar Pradesh,Sambhal,70.0,55.0,50.0,Alluvial,81.0,8.0,75.0,10200,19,60,122,Not Suitable
+400,Uttar Pradesh,Shamli,68.0,58.0,52.0,Alluvial,79.0,9.0,72.0,9900,21,64,126,Not Suitable
+451,Bihar,Siwan,62.0,62.0,58.0,Alluvial,75.0,10.0,68.0,8800,22,65,125,Suitable
+452,Bihar,Chhapra,65.0,60.0,55.0,Alluvial,78.0,8.0,70.0,9000,20,62,122,Not Suitable
+453,Bihar,Danapur,70.0,55.0,50.0,Alluvial,82.0,6.0,75.0,9500,18,58,118,Not Suitable
+454,Bihar,Bettiah,58.0,65.0,62.0,Alluvial,72.0,12.0,62.0,8500,23,68,130,Suitable
+455,Bihar,Katihar,60.0,62.0,58.0,Alluvial,74.0,11.0,65.0,8700,21,64,126,Suitable
+456,Bihar,Jehanabad,62.0,60.0,55.0,Alluvial,76.0,9.0,68.0,8900,20,62,124,Not Suitable
+457,Bihar,Aurangabad(Bihar),55.0,68.0,65.0,Alluvial,70.0,14.0,58.0,8200,24,70,132,Suitable
+458,Bihar,Sasaram,58.0,65.0,62.0,Alluvial,72.0,13.0,62.0,8400,23,68,130,Suitable
+459,Bihar,Munger,60.0,62.0,58.0,Alluvial,75.0,11.0,65.0,8600,21,65,127,Suitable
+460,Bihar,Biharsharif,62.0,60.0,55.0,Alluvial,77.0,10.0,68.0,8800,20,62,125,Not Suitable
+461,Bihar,Hajipur,68.0,55.0,50.0,Alluvial,80.0,7.0,72.0,9200,19,60,122,Not Suitable
+462,Bihar,Dehri,58.0,65.0,62.0,Alluvial,73.0,12.0,62.0,8500,22,65,128,Suitable
+463,Bihar,Arrah,65.0,60.0,55.0,Alluvial,78.0,9.0,70.0,9000,20,62,125,Not Suitable
+464,Bihar,Begusarai,70.0,52.0,48.0,Alluvial,82.0,5.0,75.0,9300,18,58,120,Not Suitable
+465,Bihar,Kishanganj,55.0,70.0,68.0,Alluvial,68.0,16.0,58.0,8000,24,70,135,Suitable
+466,Bihar,Jamalpur,60.0,65.0,62.0,Alluvial,72.0,13.0,65.0,8500,22,65,130,Suitable
+467,Bihar,Saharsa,58.0,62.0,58.0,Alluvial,70.0,14.0,62.0,8200,23,68,132,Suitable
+468,Bihar,Dumraon,52.0,72.0,70.0,Alluvial,65.0,18.0,55.0,7800,25,72,135,Suitable
+469,Bihar,Madhepura,55.0,68.0,65.0,Alluvial,68.0,16.0,58.0,8000,23,68,130,Suitable
+470,Bihar,Supaul,58.0,65.0,62.0,Alluvial,71.0,14.0,62.0,8300,22,65,128,Suitable
+ 

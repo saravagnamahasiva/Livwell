@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="row g-4 align-items-start livwell-shell">
+
+  <!-- LEFT: Sticky Map -->
+  <div class="col-xl-8 col-lg-7">
+    <div class="card map-card sticky-map">
+      <div class="card-body">
+        <input id="search-bar" type="text" placeholder="Search for a location" />
+        <div id="map" class="mt-4"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT: Scrollable Panel -->
+  <div class="col-xl-4 col-lg-5">
+    <div class="right-scroll">
+
+      <div class="card">
+        <div class="card-header">
+          <i class="bi bi-house-door"></i> Livability Summary
+        </div>
+        <ul id="summary-content" class="list-group list-group-flush">
+          <li class="list-group-item">Click on map to evaluate a location.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <i class="bi bi-cpu"></i> ML Prediction Summary
+        </div>
+        <ul id="ml-content" class="list-group list-group-flush">
+          <li class="list-group-item">Select a location to load ML prediction.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <i class="bi bi-geo-alt"></i> Nearby Facilities
+        </div>
+        <ul id="facilities-list" class="list-group list-group-flush">
+          <li class="list-group-item">No data yet.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <i class="bi bi-stars"></i> Nearby Good Areas
+        </div>
+        <div class="card-body" id="future-content">
+          <p class="small-muted mb-0">Select a place on map to get suggested nearby areas.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+{% endblock %}
